@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript Smooth Animation</title>
+    <title>박범수 프론트앤드 포트폴리오</title>
     <link
       rel="stylesheet"
       as="style"
@@ -16,40 +16,44 @@
     <link rel="stylesheet" href="animation.css" />
   </head>
   <body>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="modelViewr.js"></script>
     <main class="sticky-container" id="sticky-container">
       <div class="sticky">
         <div class="slide-container">
-          <div class="slide slide-left" id="slide1">
+          <div id="slide0">
             <div class="slide-big-text">
-              <div class="profile_container">
-                <img
-                  class="profile left"
-                  src="image/profile.png"
-                  alt="프로필 사진"
-                />
-                <img
-                  class="profile right"
-                  src="image/profile_2.jpg"
-                  alt="프로필 사진"
-                />
-              </div>
-              <p>프론트앤드 디발자, 웹 개자이너 박범수 입니다.</p>
+              <canvas id="canvas"></canvas>
+              <p>프론트앤드 디발자, 박범수 입니다.</p>
               <div class="slide-small-text">
                 <p>
-                  디발자, 개자이너는 디자이너와 개발자의 합성어로 웹디자인과
-                  프론트앤드 개발 모두에 융통한 융합형 인재임을 시사합니다.
+                  새로운 기술 학습에 관심이 많고 사용자에게 좋은 경험을 제공하는것을 최우선으로 생각합니다.
                 </p>
+                <p>디발자는 디자이너와 개발자의 합성어입니다.</p>
+              </div>
+            </div>
+          </div>
+        <div class="slide-container">
+          <div class="slide" id="slide1">
+            <div class="slide-big-text">
+              <p>프론트앤드 디발자, 박범수 입니다.</p>
+              <div class="slide-small-text">
+                <p>
+                  새로운 기술 학습에 관심이 많고 사용자에게 좋은 경험을 경험케
+                  하는것을 최우선으로 생각합니다.
+                </p>
+                <p>디발자는 디자이너와 개발자의 합성어입니다.</p>
               </div>
             </div>
           </div>
           <div id="scroll-down">
             <div class="mouse"></div>
-            <p>스크롤을 내려주세요.</p>
+            <p>스크롤을 천천히 내려주세요.</p>
           </div>
           <div class="slide" id="slide2">
             <div class="slide-big-text">
               <p>javascript와 관련 프레임워크 기반의</p>
-              <p>프론트앤드 개발을 주로 합니다.</p>
+              <p>프로젝트를 수행하였습니다.</p>
             </div>
             <div class="badge_container">
               <img
@@ -105,6 +109,5 @@
         </div>
       </div>
     </main>
-    <script type="module" src="script.js"></script>
   </body>
 </html>

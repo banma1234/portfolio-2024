@@ -48,7 +48,7 @@ function applyStyle(element, styleName, value) {
 /** @type {{[key: string]: any}} */
 const elements = {
   "sticky-container": document.getElementById("sticky-container"),
-  "scroll-down": document.getElementById("scroll-down"),
+  slide0: document.getElementById("slide0"),
   slide1: document.getElementById("slide1"),
   slide2: document.getElementById("slide2"),
   slide3: document.getElementById("slide3"),

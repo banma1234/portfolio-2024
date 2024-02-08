@@ -5,7 +5,7 @@
   width: 35px;
   height: 60px;
   margin-left: -15px;
-  border: 2px solid #000;
+  border: 2px solid #2f2f2f;
   border-radius: 50px;
   box-sizing: border-box;
 }
@@ -17,7 +17,7 @@
   width: 6px;
   height: 6px;
   margin-left: -3px;
-  background-color: #000;
+  background-color: #2f2f2f;
   border-radius: 100%;
   -webkit-animation: sdb 2s infinite;
   animation: sdb 2s infinite;
@@ -61,7 +61,7 @@
   position: relative;
   width: 200px; /* 이미지가 겹쳐지도록 설정 */
   height: auto;
-  left: 40%;
+  left: 35%;
   bottom: 220px;
   margin-top: 200px;
 }

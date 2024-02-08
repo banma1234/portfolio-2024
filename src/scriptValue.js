@@ -6,50 +6,22 @@ const midSlow = bezierEasing(0, 0.7, 1, 0.3);
 
 const def = new Map([
   [
-    "slide1",
+    "slide0",
     {
-      id: "slide1",
-      top: 500,
-      bottom: 1900,
+      id: "slide0",
+      top: 0,
+      bottom: 1200,
       topStyle: {
-        opacity: 0,
-        translateY: -60,
+        opacity: 1,
       },
       bottomStyle: {
         opacity: 0,
-        translateY: 60,
       },
       animations: [
         {
           enabled: false,
-          top: 500,
-          bottom: 1900,
-          easing: midSlow,
-          styles: [
-            {
-              name: "translateY",
-              topValue: 60,
-              bottomValue: -60,
-            },
-          ],
-        },
-        {
-          enabled: false,
-          top: 500,
-          bottom: 800,
-          easing: ease,
-          styles: [
-            {
-              name: "opacity",
-              topValue: 0,
-              bottomValue: 1,
-            },
-          ],
-        },
-        {
-          enabled: false,
-          top: 1400,
-          bottom: 1900,
+          top: 0,
+          bottom: 1200,
           easing: easeIn,
           styles: [
             {
@@ -63,22 +35,50 @@ const def = new Map([
     },
   ],
   [
-    "scroll-down",
+    "slide1",
     {
-      id: "scroll-down",
-      top: 0,
-      bottom: 600,
+      id: "slide1",
+      top: 1100,
+      bottom: 2500,
       topStyle: {
-        opacity: 1,
+        opacity: 0,
+        translateY: -60,
       },
       bottomStyle: {
         opacity: 0,
+        translateY: 60,
       },
       animations: [
         {
           enabled: false,
-          top: 0,
-          bottom: 600,
+          top: 1100,
+          bottom: 2500,
+          easing: midSlow,
+          styles: [
+            {
+              name: "translateY",
+              topValue: 60,
+              bottomValue: -60,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 1100,
+          bottom: 1400,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 2000,
+          bottom: 2500,
           easing: easeIn,
           styles: [
             {
