@@ -6,6 +6,35 @@ const midSlow = bezierEasing(0, 0.7, 1, 0.3);
 
 const def = new Map([
   [
+    "canvas",
+    {
+      id: "canvas",
+      top: 0,
+      bottom: 1200,
+      topStyle: {
+        opacity: 1,
+      },
+      bottomStyle: {
+        opacity: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 0,
+          bottom: 1200,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "slide0",
     {
       id: "slide0",
@@ -95,8 +124,8 @@ const def = new Map([
     "slide2",
     {
       id: "slide2",
-      top: 1900,
-      bottom: 3200,
+      top: 2400,
+      bottom: 3700,
       topStyle: {
         opacity: 0,
         translateY: -60,
@@ -108,8 +137,8 @@ const def = new Map([
       animations: [
         {
           enabled: false,
-          top: 1900,
-          bottom: 3200,
+          top: 2400,
+          bottom: 3700,
           easing: midSlow,
           styles: [
             {
@@ -121,8 +150,8 @@ const def = new Map([
         },
         {
           enabled: false,
-          top: 1900,
-          bottom: 2500,
+          top: 2400,
+          bottom: 3000,
           easing: ease,
           styles: [
             {
@@ -134,8 +163,8 @@ const def = new Map([
         },
         {
           enabled: false,
-          top: 2600,
-          bottom: 3200,
+          top: 3100,
+          bottom: 3700,
           easing: easeIn,
           styles: [
             {
@@ -152,8 +181,8 @@ const def = new Map([
     "slide3",
     {
       id: "slide3",
-      top: 3300,
-      bottom: 4600,
+      top: 3800,
+      bottom: 5100,
       topStyle: {
         opacity: 0,
       },
@@ -163,8 +192,8 @@ const def = new Map([
       animations: [
         {
           enabled: false,
-          top: 3300,
-          bottom: 4600,
+          top: 3800,
+          bottom: 5100,
           easing: midSlow,
           styles: [
             {
@@ -176,8 +205,8 @@ const def = new Map([
         },
         {
           enabled: false,
-          top: 3300,
-          bottom: 3900,
+          top: 3800,
+          bottom: 4400,
           easing: ease,
           styles: [
             {
@@ -189,8 +218,8 @@ const def = new Map([
         },
         {
           enabled: false,
-          top: 4000,
-          bottom: 4600,
+          top: 4500,
+          bottom: 5100,
           easing: easeIn,
           styles: [
             {
@@ -207,8 +236,8 @@ const def = new Map([
     "moving-background",
     {
       id: "moving-background",
-      top: 4500,
-      bottom: 5900,
+      top: 5000,
+      bottom: 6400,
       topStyle: {
         opacity: 0,
         translateY: 300,
@@ -220,8 +249,8 @@ const def = new Map([
       animations: [
         {
           enabled: false,
-          top: 4500,
-          bottom: 5300,
+          top: 5000,
+          bottom: 5800,
           easing: ease,
           styles: [
             {
@@ -238,8 +267,8 @@ const def = new Map([
         },
         {
           enabled: false,
-          top: 5300,
-          bottom: 5900,
+          top: 5800,
+          bottom: 6400,
           easing: easeIn,
           styles: [
             {
@@ -256,8 +285,8 @@ const def = new Map([
     "slide4",
     {
       id: "slide4",
-      top: 4700,
-      bottom: 6000,
+      top: 5200,
+      bottom: 6500,
       topStyle: {
         opacity: 0,
       },
@@ -267,8 +296,8 @@ const def = new Map([
       animations: [
         {
           enabled: false,
-          top: 4700,
-          bottom: 6000,
+          top: 5200,
+          bottom: 6500,
           easing: midSlow,
           styles: [
             {
@@ -280,8 +309,8 @@ const def = new Map([
         },
         {
           enabled: false,
-          top: 4700,
-          bottom: 5300,
+          top: 5200,
+          bottom: 5800,
           easing: ease,
           styles: [
             {
@@ -293,8 +322,8 @@ const def = new Map([
         },
         {
           enabled: false,
-          top: 5400,
-          bottom: 6000,
+          top: 5900,
+          bottom: 6500,
           easing: easeIn,
           styles: [
             {
@@ -311,7 +340,7 @@ const def = new Map([
     "slide5",
     {
       id: "slide5",
-      top: 6100,
+      top: 6600,
       bottom: 9000,
       topStyle: {
         opacity: 0,
