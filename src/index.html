@@ -16,14 +16,12 @@
     <link rel="stylesheet" href="animation.css" />
   </head>
   <body>
-    <script type="module" src="script.js"></script>
-    <script type="module" src="modelViewr.js"></script>
     <main class="sticky-container" id="sticky-container">
       <div class="sticky">
         <div class="slide-container">
+          <canvas id="canvas"></canvas>
           <div id="slide0">
             <div class="slide-big-text">
-              <canvas id="canvas"></canvas>
               <p>프론트앤드 디발자, 박범수 입니다.</p>
               <div class="slide-small-text">
                 <p>
@@ -93,7 +91,6 @@
             </div>
           </div>
           <div id="moving-background">독립적으로 움직이는 배경</div>
-
           <div class="slide slide-left" id="slide5">
             <div class="slide-big-text">
               <p>봄가을은</p>
@@ -109,5 +106,8 @@
         </div>
       </div>
     </main>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="modelViewr.js"></script>
   </body>
 </html>

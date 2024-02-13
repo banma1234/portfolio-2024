@@ -23,6 +23,13 @@ main {
   height: 100%;
 }
 
+#canvas {
+  position: absolute;
+  margin: 0 auto;
+  top: 50px;
+  z-index: 999999;
+}
+
 .slide {
   position: absolute;
   display: none;
@@ -65,8 +72,8 @@ span {
 }
 
 #slide0 {
+  margin-top: 200px;
   position: absolute;
-  /* z-index: 0; */
 }
 
 #scroll-down p {
