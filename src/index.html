@@ -17,18 +17,42 @@
   </head>
   <body>
     <main class="sticky-container" id="sticky-container">
+      <nav id="TOC">
+        <ul>
+          <li class = "TOC_items">
+            <p>소개</p>
+          </li>
+          <li class = "TOC_items">
+            <p>프로젝트</p>
+          </li>
+          <li class = "TOC_items">
+            <p>오픈소스</p>
+          </li>
+          <li class = "TOC_items">
+            <p>블로그</p>
+          </li>
+          <li class = "TOC_items">
+            <p>기타활동</p>
+          </li>
+        </ul>
+      </nav>
       <div class="sticky">
         <div class="slide-container">
           <canvas id="canvas"></canvas>
-          <div id="slide0">
+          <div class="slide" id="slide0">
             <div class="slide-big-text">
               <p>프론트앤드 디발자, 박범수 입니다.</p>
               <div class="slide-small-text">
                 <p>
-                  새로운 기술 학습에 관심이 많고 사용자에게 좋은 경험을 제공하는것을 최우선으로 생각합니다.
+                  새로운 기술 학습에 관심이 많고 사용자에게 좋은 경험을 경험케
+                  하는것을 최우선으로 생각합니다.
                 </p>
                 <p>디발자는 디자이너와 개발자의 합성어입니다.</p>
               </div>
+            </div>
+            <div id="scroll-down">
+              <div class="mouse"></div>
+              <p>스크롤을 천천히 내려주세요.</p>
             </div>
           </div>
         <div class="slide-container">
@@ -43,10 +67,6 @@
                 <p>디발자는 디자이너와 개발자의 합성어입니다.</p>
               </div>
             </div>
-          </div>
-          <div id="scroll-down">
-            <div class="mouse"></div>
-            <p>스크롤을 천천히 내려주세요.</p>
           </div>
           <div class="slide" id="slide2">
             <div class="slide-big-text">
@@ -118,8 +138,8 @@
         </div>
       </div>
     </main>
-
-    <script type="module" src="script.js"></script>
-    <script type="module" src="modelViewr.js"></script>
+    <script type="module" src="./script/smoothPageControll.js"></script>
+    <script type="module" src="./script/modelViewer.js"></script>
+    <script type="module" src="./script/TOC.js"></script>
   </body>
 </html>
