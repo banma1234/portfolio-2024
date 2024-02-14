@@ -1,6 +1,6 @@
 // @ts-check
 // @ts-ignore
-import def from "./scriptValue";
+import def from "./componentValue";
 
 const enabled = new Map();
 const disabled = new Map();
@@ -47,14 +47,16 @@ function applyStyle(element, styleName, value) {
 
 /** @type {{[key: string]: any}} */
 const elements = {
-  "sticky-container": document.getElementById("sticky-container"),
-  canvas: document.getElementById("canvas"),
+  // 슬라이드
   slide0: document.getElementById("slide0"),
   slide1: document.getElementById("slide1"),
   slide2: document.getElementById("slide2"),
   slide3: document.getElementById("slide3"),
   slide4: document.getElementById("slide4"),
   slide5: document.getElementById("slide5"),
+  // 컴포넌트
+  canvas: document.getElementById("canvas"),
+  "sticky-container": document.getElementById("sticky-container"),
   "moving-background": document.getElementById("moving-background"),
 };
 

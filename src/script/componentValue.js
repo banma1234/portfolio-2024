@@ -4,42 +4,13 @@ const ease = bezierEasing(0.25, 0.1, 0.25, 1.0);
 const easeIn = bezierEasing(0.38, 0.01, 0.78, 0.13);
 const midSlow = bezierEasing(0, 0.7, 1, 0.3);
 
-const def = new Map([
-  [
-    "canvas",
-    {
-      id: "canvas",
-      top: 0,
-      bottom: 1200,
-      topStyle: {
-        opacity: 1,
-      },
-      bottomStyle: {
-        opacity: 0,
-      },
-      animations: [
-        {
-          enabled: false,
-          top: 0,
-          bottom: 1200,
-          easing: easeIn,
-          styles: [
-            {
-              name: "opacity",
-              topValue: 1,
-              bottomValue: 0,
-            },
-          ],
-        },
-      ],
-    },
-  ],
+const slide = new Map([
   [
     "slide0",
     {
       id: "slide0",
       top: 0,
-      bottom: 1200,
+      bottom: 1100,
       topStyle: {
         opacity: 1,
       },
@@ -50,7 +21,7 @@ const def = new Map([
         {
           enabled: false,
           top: 0,
-          bottom: 1200,
+          bottom: 1100,
           easing: easeIn,
           styles: [
             {
@@ -233,55 +204,6 @@ const def = new Map([
     },
   ],
   [
-    "moving-background",
-    {
-      id: "moving-background",
-      top: 5000,
-      bottom: 6400,
-      topStyle: {
-        opacity: 0,
-        translateY: 300,
-      },
-      bottomStyle: {
-        opacity: 0,
-        translateY: 0,
-      },
-      animations: [
-        {
-          enabled: false,
-          top: 5000,
-          bottom: 5800,
-          easing: ease,
-          styles: [
-            {
-              name: "opacity",
-              topValue: 0,
-              bottomValue: 1,
-            },
-            {
-              name: "translateY",
-              topValue: 200,
-              bottomValue: 0,
-            },
-          ],
-        },
-        {
-          enabled: false,
-          top: 5800,
-          bottom: 6400,
-          easing: easeIn,
-          styles: [
-            {
-              name: "opacity",
-              topValue: 1,
-              bottomValue: 0,
-            },
-          ],
-        },
-      ],
-    },
-  ],
-  [
     "slide4",
     {
       id: "slide4",
@@ -379,5 +301,87 @@ const def = new Map([
     },
   ],
 ]);
+const components = new Map([
+  [
+    "canvas",
+    {
+      id: "canvas",
+      top: 0,
+      bottom: 1300,
+      topStyle: {
+        opacity: 1,
+      },
+      bottomStyle: {
+        opacity: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 0,
+          bottom: 1300,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "moving-background",
+    {
+      id: "moving-background",
+      top: 5000,
+      bottom: 6400,
+      topStyle: {
+        opacity: 0,
+        translateY: 300,
+      },
+      bottomStyle: {
+        opacity: 0,
+        translateY: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 5000,
+          bottom: 5800,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+            {
+              name: "translateY",
+              topValue: 200,
+              bottomValue: 0,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 5800,
+          bottom: 6400,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+]);
+
+const def = new Map([...slide, ...components]);
 
 export default def;
