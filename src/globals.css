@@ -25,11 +25,11 @@ ul {
   font-weight: normal;
 }
 
-ol,
-ul {
+li {
   list-style: none;
 }
 
+ol,
 img {
   max-width: 100%;
   height: auto;
