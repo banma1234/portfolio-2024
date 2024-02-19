@@ -28,7 +28,7 @@ let camera = new THREE.PerspectiveCamera(
   0.52,
   window.innerWidth / window.innerHeight,
   1,
-  10000
+  10000,
 );
 camera.position.set(0, 0, 150);
 
