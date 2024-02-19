@@ -52,12 +52,14 @@ span {
   margin-left: 5px;
 }
 .slide-small-text p {
+  font-weight: bold;
   font-size: 18px;
   margin: 0;
   opacity: 0.5;
 }
-#slide0 {
-  margin-top: 200px;
+#slide0,
+#slide1 {
+  margin-top: 250px;
 }
 
 #scroll-down {
@@ -66,7 +68,7 @@ span {
   width: 100%;
   height: 50px;
   text-align: center;
-  top: 230px;
+  top: 200px;
 }
 #scroll-down p {
   margin-top: 64px;
@@ -96,7 +98,7 @@ span {
   display: flex;
   margin-top: 30px;
   justify-content: center;
-  column-gap: 15px;
+  column-gap: 4px;
 }
 .card_overlap {
   top: 0;
@@ -150,4 +152,27 @@ span {
   background-color: #2f2f2f;
   margin: 0.5rem 0 0 0;
   right: 90%;
+}
+
+.blog,
+.portfolio {
+  position: absolute;
+  margin: 0 auto;
+  top: 100px;
+}
+
+#card_1,
+#card_2,
+#card_3,
+#card_4 {
+  background-color: seashell;
+  padding: 20px;
+  z-index: 9999999;
+  cursor: pointer;
+  max-width: 500px;
+}
+#card_1,
+#card_3 img {
+  width: 200px;
+  height: auto;
 }

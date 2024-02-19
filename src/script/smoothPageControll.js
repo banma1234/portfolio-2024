@@ -56,6 +56,10 @@ const elements = {
   slide5: document.getElementById("slide5"),
   // 컴포넌트
   canvas: document.getElementById("canvas"),
+  card_1: document.getElementById("card_1"),
+  card_2: document.getElementById("card_2"),
+  card_3: document.getElementById("card_3"),
+  card_4: document.getElementById("card_4"),
   "sticky-container": document.getElementById("sticky-container"),
   "moving-background": document.getElementById("moving-background"),
 };
@@ -113,7 +117,7 @@ window.addEventListener("scroll", onScroll);
 
 function initAnimation() {
   // Sticky Conainer 의 높이를 설정함.
-  elements["sticky-container"].style.height = `7100px`;
+  elements["sticky-container"].style.height = `9000px`;
 
   // 모든 요소를 disabled 에 넣음.
   def.forEach((obj, id) => {
