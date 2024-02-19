@@ -39,7 +39,7 @@ const slide = new Map([
     {
       id: "slide1",
       top: 1100,
-      bottom: 2500,
+      bottom: 3500,
       topStyle: {
         opacity: 0,
         translateY: -60,
@@ -52,7 +52,7 @@ const slide = new Map([
         {
           enabled: false,
           top: 1100,
-          bottom: 2500,
+          bottom: 3500,
           easing: midSlow,
           styles: [
             {
@@ -77,8 +77,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 2000,
-          bottom: 2500,
+          top: 3000,
+          bottom: 3500,
           easing: easeIn,
           styles: [
             {
@@ -95,8 +95,8 @@ const slide = new Map([
     "slide2",
     {
       id: "slide2",
-      top: 2400,
-      bottom: 3700,
+      top: 3600,
+      bottom: 4900,
       topStyle: {
         opacity: 0,
         translateY: -60,
@@ -108,8 +108,8 @@ const slide = new Map([
       animations: [
         {
           enabled: false,
-          top: 2400,
-          bottom: 3700,
+          top: 3600,
+          bottom: 4900,
           easing: midSlow,
           styles: [
             {
@@ -121,8 +121,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 2400,
-          bottom: 3000,
+          top: 3600,
+          bottom: 4200,
           easing: ease,
           styles: [
             {
@@ -134,8 +134,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 3100,
-          bottom: 3700,
+          top: 4300,
+          bottom: 4900,
           easing: easeIn,
           styles: [
             {
@@ -152,8 +152,8 @@ const slide = new Map([
     "slide3",
     {
       id: "slide3",
-      top: 3800,
-      bottom: 5100,
+      top: 5000,
+      bottom: 6300,
       topStyle: {
         opacity: 0,
       },
@@ -163,8 +163,8 @@ const slide = new Map([
       animations: [
         {
           enabled: false,
-          top: 3800,
-          bottom: 5100,
+          top: 5000,
+          bottom: 6300,
           easing: midSlow,
           styles: [
             {
@@ -176,8 +176,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 3800,
-          bottom: 4400,
+          top: 5000,
+          bottom: 5600,
           easing: ease,
           styles: [
             {
@@ -189,8 +189,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 4500,
-          bottom: 5100,
+          top: 5700,
+          bottom: 6300,
           easing: easeIn,
           styles: [
             {
@@ -207,8 +207,8 @@ const slide = new Map([
     "slide4",
     {
       id: "slide4",
-      top: 5200,
-      bottom: 6500,
+      top: 6400,
+      bottom: 7700,
       topStyle: {
         opacity: 0,
       },
@@ -218,8 +218,8 @@ const slide = new Map([
       animations: [
         {
           enabled: false,
-          top: 5200,
-          bottom: 6500,
+          top: 6400,
+          bottom: 7700,
           easing: midSlow,
           styles: [
             {
@@ -231,8 +231,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 5200,
-          bottom: 5800,
+          top: 6400,
+          bottom: 7000,
           easing: ease,
           styles: [
             {
@@ -244,8 +244,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 5900,
-          bottom: 6500,
+          top: 7100,
+          bottom: 7700,
           easing: easeIn,
           styles: [
             {
@@ -262,8 +262,8 @@ const slide = new Map([
     "slide5",
     {
       id: "slide5",
-      top: 6600,
-      bottom: 9000,
+      top: 7800,
+      bottom: 9100,
       topStyle: {
         opacity: 0,
       },
@@ -273,27 +273,27 @@ const slide = new Map([
       animations: [
         {
           enabled: false,
-          top: 6100,
-          bottom: 7100,
-          easing: midSlow,
-          styles: [
-            {
-              name: "translateY",
-              topValue: 60,
-              bottomValue: -60,
-            },
-          ],
-        },
-        {
-          enabled: false,
-          top: 6100,
-          bottom: 6700,
+          top: 7800,
+          bottom: 8400,
           easing: ease,
           styles: [
             {
               name: "opacity",
               topValue: 0,
               bottomValue: 1,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 8500,
+          bottom: 9100,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
             },
           ],
         },
@@ -309,7 +309,7 @@ const components = new Map([
       top: 0,
       bottom: 1300,
       topStyle: {
-        opacity: 1,
+        opacity: 0,
       },
       bottomStyle: {
         opacity: 0,
@@ -374,6 +374,222 @@ const components = new Map([
               name: "opacity",
               topValue: 1,
               bottomValue: 0,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "card_1",
+    {
+      id: "card_1",
+      top: 800,
+      bottom: 2200,
+      topStyle: {
+        opacity: 0,
+        translateX: -400,
+      },
+      bottomStyle: {
+        opacity: 0,
+        translateX: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 800,
+          bottom: 1600,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+            {
+              name: "translateX",
+              topValue: -200,
+              bottomValue: 0,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 1600,
+          bottom: 2200,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+            {
+              name: "translateY",
+              topValue: 0,
+              bottomValue: -80,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "card_2",
+    {
+      id: "card_2",
+      top: 800,
+      bottom: 2200,
+      topStyle: {
+        opacity: 0,
+        translateX: 400,
+      },
+      bottomStyle: {
+        opacity: 0,
+        translateX: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 800,
+          bottom: 1600,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+            {
+              name: "translateX",
+              topValue: 200,
+              bottomValue: 0,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 1600,
+          bottom: 2200,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+            {
+              name: "translateY",
+              topValue: 0,
+              bottomValue: -80,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "card_3",
+    {
+      id: "card_3",
+      top: 2000,
+      bottom: 3400,
+      topStyle: {
+        opacity: 0,
+        translateX: -400,
+      },
+      bottomStyle: {
+        opacity: 0,
+        translateX: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 2000,
+          bottom: 3400,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+            {
+              name: "translateX",
+              topValue: -200,
+              bottomValue: 0,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 2800,
+          bottom: 3400,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+            {
+              name: "translateY",
+              topValue: 0,
+              bottomValue: -80,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "card_4",
+    {
+      id: "card_4",
+      top: 2000,
+      bottom: 3400,
+      topStyle: {
+        opacity: 0,
+        translateX: 400,
+      },
+      bottomStyle: {
+        opacity: 0,
+        translateX: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 2000,
+          bottom: 3400,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+            {
+              name: "translateX",
+              topValue: 200,
+              bottomValue: 0,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 2800,
+          bottom: 3400,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+            {
+              name: "translateY",
+              topValue: 0,
+              bottomValue: -80,
             },
           ],
         },
