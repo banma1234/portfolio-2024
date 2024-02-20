@@ -58,7 +58,7 @@ const slide = new Map([
             {
               name: "translateY",
               topValue: 60,
-              bottomValue: -60,
+              bottomValue: -80,
             },
           ],
         },
@@ -77,7 +77,7 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 3000,
+          top: 2900,
           bottom: 3500,
           easing: easeIn,
           styles: [
@@ -384,7 +384,7 @@ const components = new Map([
     "card_1",
     {
       id: "card_1",
-      top: 800,
+      top: 900,
       bottom: 2200,
       topStyle: {
         opacity: 0,
@@ -397,7 +397,7 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 800,
+          top: 900,
           bottom: 1600,
           easing: ease,
           styles: [
@@ -438,7 +438,7 @@ const components = new Map([
     "card_2",
     {
       id: "card_2",
-      top: 800,
+      top: 900,
       bottom: 2200,
       topStyle: {
         opacity: 0,
@@ -451,7 +451,7 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 800,
+          top: 900,
           bottom: 1600,
           easing: ease,
           styles: [

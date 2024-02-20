@@ -57,9 +57,11 @@ span {
   margin: 0;
   opacity: 0.5;
 }
-#slide0,
-#slide1 {
+#slide0 {
   margin-top: 250px;
+}
+#slide1 {
+  margin-top: 350px;
 }
 
 #scroll-down {
@@ -122,6 +124,10 @@ span {
   align-items: center;
   right: 5%;
   height: 100%;
+
+  @media screen and (max-width: 899px) {
+    display: none;
+  }
 }
 #TOC ul {
   text-align: left;
@@ -165,14 +171,17 @@ span {
 #card_2,
 #card_3,
 #card_4 {
-  background-color: seashell;
   padding: 20px;
   z-index: 9999999;
-  cursor: pointer;
-  max-width: 500px;
+  min-width: 400px;
+  max-width: 600px;
+  text-align: left;
 }
-#card_1,
+#card_1 img {
+  width: auto;
+  height: 100%;
+}
 #card_3 img {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
