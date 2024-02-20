@@ -58,7 +58,7 @@ const slide = new Map([
             {
               name: "translateY",
               topValue: 60,
-              bottomValue: -80,
+              bottomValue: -60,
             },
           ],
         },
