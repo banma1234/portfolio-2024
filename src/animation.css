@@ -102,23 +102,17 @@
   }
 }
 
-/* dd */
-
-/* Cards Carousel */
-/* ---------------------------------------------- */
-
 .icon-cards {
   position: relative;
   display: flex;
   width: 100%;
   height: 40vw;
   max-width: 380px;
-  max-height: 250px;
+  max-height: 240px;
   margin: 0 auto;
   perspective: 1000px;
   transform-origin: center;
 }
-
 .icon-cards__content {
   position: absolute;
   width: 100%;
@@ -128,17 +122,15 @@
   transform: translateZ(-30vw) rotateX(0);
   animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
-
 .icon-cards__content.step-animation {
   animation: carousel 8s infinite steps(1) forwards;
 }
-
 .icon-cards__item {
   position: absolute;
   width: 60vw;
   height: 40vw;
-  max-width: 380px;
-  max-height: 250px;
+  max-width: 340px;
+  max-height: 220px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   transform-origin: center;
@@ -147,20 +139,17 @@
   justify-content: center;
   cursor: pointer;
 }
-
 .icon-cards__item:nth-child(1) {
-  background: #fdd94f;
   transform: rotateX(0) translateZ(12vw);
+  box-shadow: 0 8px 12px rgb(0 0 0 / 20%);
 }
-
 .icon-cards__item:nth-child(2) {
-  background: #f87949;
   transform: rotateX(120deg) translateZ(12vw);
+  box-shadow: 0 8px 12px rgb(0 0 0 / 20%);
 }
-
 .icon-cards__item:nth-child(3) {
-  background: #fbab48;
   transform: rotateX(240deg) translateZ(12vw);
+  box-shadow: 0 8px 12px rgb(0 0 0 / 20%);
 }
 
 /* Carousel animation */
