@@ -506,7 +506,7 @@ const components = new Map([
         {
           enabled: false,
           top: 2000,
-          bottom: 3400,
+          bottom: 2700,
           easing: ease,
           styles: [
             {
@@ -523,7 +523,7 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 2800,
+          top: 2700,
           bottom: 3400,
           easing: easeIn,
           styles: [
@@ -560,7 +560,7 @@ const components = new Map([
         {
           enabled: false,
           top: 2000,
-          bottom: 3400,
+          bottom: 2700,
           easing: ease,
           styles: [
             {
@@ -577,7 +577,7 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 2800,
+          top: 2700,
           bottom: 3400,
           easing: easeIn,
           styles: [
