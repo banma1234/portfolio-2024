@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="animation.css" />
   </head>
   <body>
+    <nav id="TOC">
+      <ul>
+        <li class="TOC_items">소개</li>
+        <li class="TOC_items">프로젝트</li>
+        <li class="TOC_items">오픈소스</li>
+        <li class="TOC_items">블로그</li>
+        <li class="TOC_items">외부활동</li>
+        <li class="TOC_items">기타</li>
+      </ul>
+    </nav>
     <main class="sticky-container" id="sticky-container">
-      <nav id="TOC">
-        <ul>
-          <li class="TOC_items">소개</li>
-          <li class="TOC_items">프로젝트</li>
-          <li class="TOC_items">오픈소스</li>
-          <li class="TOC_items">블로그</li>
-          <li class="TOC_items">외부활동</li>
-          <li class="TOC_items">기타</li>
-        </ul>
-      </nav>
       <div class="sticky">
         <div class="slide-container">
           <canvas id="canvas"></canvas>
@@ -65,24 +65,57 @@
                   </figure>
                 </div>
                 <div id="card_2">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
+                  <ul>
+                    <li>
+                      Next.js, mongoDB를 이용한 full CRUD 페이지입니다. 각
+                      페이지의 특성과 데이터 접근권한에 따라 SSG, SSR, CSR을
+                      두루 적용하였습니다.
+                    </li>
+                    <li>
+                      SEO 최적화를 위해 sitemap 및 RSS를 작성하였습니다.
+                      sitemap은 동적으로 접근 가능하며 RSS는 xml과 json 2가지
+                      형태로 제공됩니다.
+                    </li>
+                    <li>
+                      stateless 세션을 이용해 관리자 로그인을 구현, 관리자
+                      페이지 및 관련 api 요청에 제한을 두었습니다.
+                    </li>
+                    <li>
+                      이미지 출력을 위한 별도의 CDN 서버를 두어 이미지 로딩시간
+                      및 웹서버의 부하를 줄였습니다.
+                    </li>
+                    <li>
+                      계층형 트리구조를 활용해 댓글-대댓글 로직을
+                      구현하였습니다.
+                    </li>
+                  </ul>
                   <div class="btn_container">
+                    <a href="https://chocoham.dev" target="_blank">
+                      <button class="icon">
+                        <p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            fill="currentColor"
+                            class="bi bi-link"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                            />
+                            <path
+                              d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"
+                            />
+                          </svg>
+                        </p>
+                      </button>
+                    </a>
                     <a
                       href="https://github.com/banma1234/myBlog-migration"
                       target="_blank"
                     >
-                      <button>README</button>
+                      <button><p>README</p></button>
                     </a>
                   </div>
                 </div>
@@ -106,24 +139,33 @@
                   </figure>
                 </div>
                 <div id="card_4">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
+                  <ul>
+                    <li>
+                      Lorem Ipsum is simply dummy text of the printing anddd
+                      ddddd dd ddd ddd dd ddd dddddddd
+                    </li>
+                    <li>
+                      Lorem Ipsum is simply dummy text of the printing anddd
+                      ddddd dd ddd ddd ddd ddd dddddddd
+                    </li>
+                    <li>
+                      Lorem Ipsum is simply dummy text of the printing anddd
+                      ddddd d dddd dddd dd ddd dddddddd
+                    </li>
+                    <li>
+                      Lorem Ipsum is simply dummy text of the printing anddd
+                      ddddd dd ddd ddd ddd ddd dddddddd
+                    </li>
+                    <li>
+                      Lorem Ipsum is simply dummy text of the printing anddd
+                    </li>
+                  </ul>
                   <div class="btn_container">
                     <a
                       href="https://github.com/banma1234/portfolio"
                       target="_blank"
                     >
-                      <button>README</button>
+                      <button><p>README</p></button>
                     </a>
                   </div>
                 </div>

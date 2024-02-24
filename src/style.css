@@ -57,6 +57,16 @@
 #slide1 {
   margin-top: 350px;
 }
+#slide1 .slide-big-text {
+  @media screen and (max-width: 899px) {
+    margin-top: 50px;
+  }
+}
+#slide1 .slide-small-text {
+  @media screen and (max-width: 899px) {
+    display: none;
+  }
+}
 
 #scroll-down {
   position: absolute;
@@ -83,43 +93,15 @@
   margin-top: 40px;
 }
 
-.card {
-  width: 300px;
-  height: 150px;
-  border-radius: 20px;
-  background-color: red;
-  cursor: pointer;
-}
-.card_container {
-  display: flex;
-  margin-top: 30px;
-  justify-content: center;
-  column-gap: 4px;
-}
-.card_overlap {
-  top: 0;
-  position: absolute;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  margin: 0 auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 60%);
-  transition: opacity 0.5s ease-in-out;
-}
-
 #TOC {
   z-index: 999999;
   position: fixed;
   display: flex;
   align-items: center;
-  right: 5%;
+  right: 3%;
   height: 100%;
 
-  @media screen and (max-width: 899px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 }
@@ -128,7 +110,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  width: 100px;
+  width: 110px;
 }
 .TOC_items {
   opacity: 0.6;
@@ -159,8 +141,24 @@
   position: absolute;
   margin: 0 auto;
   top: 100px;
+  z-index: 999;
+}
+.portfolio {
+  z-index: 997;
 }
 
+.card_container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  column-gap: 4px;
+}
+.card_container ul {
+  margin-top: -20px;
+}
+.card_container li {
+  padding: 8px;
+}
 #card_1,
 #card_2,
 #card_3,
@@ -186,12 +184,29 @@
   padding: 15px;
 }
 .btn_container button {
+  margin: 3px;
   border: none;
   border-radius: 2rem;
   background-color: #2f2f2f;
   color: #fff;
   padding: 0.6rem 1rem;
   cursor: pointer;
+  border: 2px solid #2f2f2f;
+  overflow: hidden;
+  position: relative;
+}
+.btn_container .icon {
+  padding: 0.3rem 0.8rem;
+}
+.btn_container button p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  transition: all 1s ease;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .activity_image_container {

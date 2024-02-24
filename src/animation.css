@@ -56,52 +56,7 @@
   }
 }
 
-.profile_container {
-  position: relative;
-  width: 200px; /* 이미지가 겹쳐지도록 설정 */
-  height: auto;
-  left: 35%;
-  bottom: 220px;
-  margin-top: 200px;
-}
-
-.profile {
-  position: absolute;
-  width: 200px;
-  top: 0;
-  left: 50%;
-  border-radius: 100%;
-  transform: translateX(-50%);
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-}
-
-.left {
-  animation-name: slideLeft;
-}
-
-.right {
-  animation-name: slideRight;
-}
-
-@keyframes slideLeft {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(calc(-50% - 100px));
-  }
-}
-
-@keyframes slideRight {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(calc(-50% + 100px));
-  }
-}
-
+/* 캐러셀 카드 */
 .icon-cards {
   position: relative;
   display: flex;
@@ -152,7 +107,7 @@
   box-shadow: 0 8px 12px rgb(0 0 0 / 20%);
 }
 
-/* Carousel animation */
+/* 케러셀 애니메이션 */
 @keyframes carousel {
   0%,
   17.5% {
@@ -170,4 +125,22 @@
   100% {
     transform: translateZ(-12vw) rotateX(-360deg);
   }
+}
+
+/* 버튼 */
+.btn_container button:before {
+  top: 0;
+  left: -210px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  transition: all 0.7s ease;
+}
+.btn_container button:hover:before {
+  left: 0;
+}
+.btn_container button:hover p {
+  color: #2f2f2f;
 }

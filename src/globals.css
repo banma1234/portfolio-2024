@@ -9,6 +9,15 @@ main {
   font-family: "Pretendard", sans-serif;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+}
+
 *,
 *:before,
 *:after {

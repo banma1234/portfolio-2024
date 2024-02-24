@@ -2,6 +2,7 @@ import * as THREE from "https://unpkg.com/three/build/three.module.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 const scene = new THREE.Scene();
+const card2 = document.getElementById("card_2");
 const renderer = new THREE.WebGLRenderer({
   antialias: true,
   canvas: document.querySelector("#canvas"),
@@ -78,6 +79,13 @@ loader.load("image/react.glb", function (gltf) {
       model.rotation.z += rotationX / 20;
 
       renderer.render(scene, camera);
+    }
+
+    /** 카드제어(상당히 짜침) */
+    if (rotationX >= 5.7) {
+      card2.style.display = "none";
+    } else if (rotationX < 5.7) {
+      card2.style.display = "block";
     }
   }
 
