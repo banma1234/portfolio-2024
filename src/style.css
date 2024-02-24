@@ -13,7 +13,7 @@
   position: absolute;
   margin: 0 auto;
   top: 50px;
-  z-index: 999999;
+  z-index: 1000000;
 }
 
 .slide {
@@ -59,7 +59,7 @@
 }
 #slide1 .slide-big-text {
   @media screen and (max-width: 899px) {
-    margin-top: 50px;
+    display: none;
   }
 }
 #slide1 .slide-small-text {
@@ -94,7 +94,7 @@
 }
 
 #TOC {
-  z-index: 999999;
+  z-index: 999;
   position: fixed;
   display: flex;
   align-items: center;
@@ -136,12 +136,12 @@
   right: 90%;
 }
 
-.blog,
-.portfolio {
+.portfolio,
+.blog {
   position: absolute;
   margin: 0 auto;
   top: 100px;
-  z-index: 999;
+  z-index: 999999;
 }
 .portfolio {
   z-index: 997;
@@ -152,6 +152,10 @@
   margin-top: 30px;
   justify-content: center;
   column-gap: 4px;
+
+  @media screen and (max-width: 899px) {
+    flex-direction: column;
+  }
 }
 .card_container ul {
   margin-top: -20px;
@@ -164,7 +168,6 @@
 #card_3,
 #card_4 {
   padding: 20px;
-  z-index: 9999999;
   min-width: 400px;
   max-width: 600px;
   text-align: left;

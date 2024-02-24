@@ -3,9 +3,10 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 const scene = new THREE.Scene();
 const card2 = document.getElementById("card_2");
+const canvas = document.getElementById("canvas");
 const renderer = new THREE.WebGLRenderer({
   antialias: true,
-  canvas: document.querySelector("#canvas"),
+  canvas: canvas,
   alpha: true,
 });
 /** targetScale = 스케일업 최대치*/
@@ -29,7 +30,7 @@ let camera = new THREE.PerspectiveCamera(
   0.52,
   window.innerWidth / window.innerHeight,
   1,
-  10000,
+  10000
 );
 camera.position.set(0, 0, 150);
 
@@ -80,12 +81,21 @@ loader.load("image/react.glb", function (gltf) {
 
       renderer.render(scene, camera);
     }
+    console.log(rotationX);
 
     /** 카드제어(상당히 짜침) */
     if (rotationX >= 5.7) {
       card2.style.display = "none";
     } else if (rotationX < 5.7) {
       card2.style.display = "block";
+    }
+
+    if (rotationX >= 2.1) {
+      canvas.style.display = "none";
+      canvas.style.zIndex = "0";
+    } else if (rotationX < 2.1) {
+      canvas.style.display = "block";
+      canvas.style.zIndex = "1000000";
     }
   }
 
