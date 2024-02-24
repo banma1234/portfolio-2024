@@ -427,7 +427,7 @@ const components = new Map([
             {
               name: "translateY",
               topValue: 0,
-              bottomValue: -80,
+              bottomValue: -100,
             },
           ],
         },
@@ -481,7 +481,7 @@ const components = new Map([
             {
               name: "translateY",
               topValue: 0,
-              bottomValue: -80,
+              bottomValue: -100,
             },
           ],
         },
@@ -535,7 +535,7 @@ const components = new Map([
             {
               name: "translateY",
               topValue: 0,
-              bottomValue: -80,
+              bottomValue: -100,
             },
           ],
         },
@@ -589,7 +589,7 @@ const components = new Map([
             {
               name: "translateY",
               topValue: 0,
-              bottomValue: -80,
+              bottomValue: -100,
             },
           ],
         },
