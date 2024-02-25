@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,12 +18,12 @@
   <body>
     <nav id="TOC">
       <ul>
+        <li class="TOC_items">서문</li>
         <li class="TOC_items">소개</li>
         <li class="TOC_items">프로젝트</li>
         <li class="TOC_items">오픈소스</li>
         <li class="TOC_items">블로그</li>
         <li class="TOC_items">외부활동</li>
-        <li class="TOC_items">기타</li>
       </ul>
     </nav>
     <main class="sticky-container" id="sticky-container">
@@ -47,6 +47,18 @@
             </div>
           </div>
           <div class="slide-container">
+            <div class="slide slide-left" id="slide5">
+              <div class="slide-big-text">
+                <p>봄가을은</p>
+                <p>당신의 풍요로운</p>
+                <p>나날을 꿈꿉니다.</p>
+              </div>
+              <div class="go-surf-wrapper">
+                <a href="https://springfall.cc/post/5" target="_blank"
+                  >이 코드의 설명을 보려면 여기를 눌르세요.</a
+                >
+              </div>
+            </div>
             <div class="blog">
               <div class="card_container">
                 <div id="card_1">
@@ -66,58 +78,62 @@
                 </div>
                 <div id="card_2">
                   <ul>
+                    <div class="flex_container">
+                      <h1>"Chocoham 개발 블로그"</h1>
+                      <div class="btn_container">
+                        <a href="https://chocoham.dev" target="_blank">
+                          <button class="icon">
+                            <p>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                fill="currentColor"
+                                class="bi bi-link"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                                />
+                                <path
+                                  d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"
+                                />
+                              </svg>
+                            </p>
+                          </button>
+                        </a>
+                        <a
+                          href="https://github.com/banma1234/myBlog-migration"
+                          target="_blank"
+                        >
+                          <button><p>README</p></button>
+                        </a>
+                      </div>
+                    </div>
                     <li>
-                      Next.js, mongoDB를 이용한 full CRUD 페이지입니다. 각
-                      페이지의 특성과 데이터 접근권한에 따라 SSG, SSR, CSR을
-                      두루 적용하였습니다.
+                      <strong>Next.js, mongoDB</strong>를 이용한 CRUD
+                      애플리케이션입니다. 각 페이지의 특성과 데이터 접근권한에
+                      따라 <strong>SSG, SSR, CSR</strong>을 적재적소에
+                      활용하였습니다.
                     </li>
                     <li>
-                      SEO 최적화를 위해 sitemap 및 RSS를 작성하였습니다.
-                      sitemap은 동적으로 접근 가능하며 RSS는 xml과 json 2가지
-                      형태로 제공됩니다.
+                      SEO 최적화를 위해 <strong>sitemap</strong> 및
+                      <strong>RSS</strong>를 작성하였습니다. sitemap은 동적으로
+                      접근 가능하며 RSS는 xml과 json 2가지 형태로 제공됩니다.
                     </li>
                     <li>
-                      stateless 세션을 이용해 관리자 로그인을 구현, 관리자
-                      페이지 및 관련 api 요청에 제한을 두었습니다.
+                      <strong>stateless 세션</strong>을 이용해 관리자 로그인을
+                      구현, 관리자 페이지 및 관련 api 요청에 제한을 두었습니다.
                     </li>
                     <li>
-                      이미지 출력을 위한 별도의 CDN 서버를 두어 이미지 로딩시간
-                      및 웹서버의 부하를 줄였습니다.
+                      별도의 <strong>CDN 서버</strong>를 두어 이미지 로딩시간 및
+                      웹서버의 부하를 줄였습니다.
                     </li>
                     <li>
-                      계층형 트리구조를 활용해 댓글-대댓글 로직을
-                      구현하였습니다.
+                      <strong>계층형 트리구조</strong>를 활용해 댓글-대댓글
+                      로직을 구현하였습니다.
                     </li>
                   </ul>
-                  <div class="btn_container">
-                    <a href="https://chocoham.dev" target="_blank">
-                      <button class="icon">
-                        <p>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="22"
-                            height="22"
-                            fill="currentColor"
-                            class="bi bi-link"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
-                            />
-                            <path
-                              d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"
-                            />
-                          </svg>
-                        </p>
-                      </button>
-                    </a>
-                    <a
-                      href="https://github.com/banma1234/myBlog-migration"
-                      target="_blank"
-                    >
-                      <button><p>README</p></button>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -140,34 +156,36 @@
                 </div>
                 <div id="card_4">
                   <ul>
+                    <div class="flex_container">
+                      <h1>"포트폴리오 웹페이지"</h1>
+                      <div class="btn_container">
+                        <a
+                          href="https://github.com/banma1234/portfolio"
+                          target="_blank"
+                        >
+                          <button><p>README</p></button>
+                        </a>
+                      </div>
+                    </div>
                     <li>
-                      Lorem Ipsum is simply dummy text of the printing anddd
-                      ddddd dd ddd ddd dd ddd dddddddd
+                      <strong>vanila JS, CSS</strong>만을 이용한 싱글페이지
+                      애플리케이션입니다.
                     </li>
                     <li>
-                      Lorem Ipsum is simply dummy text of the printing anddd
-                      ddddd dd ddd ddd ddd ddd dddddddd
+                      <strong>Three.js</strong>를 이용해 웹 환경에서 3D 모델을
+                      출력하고 브라우저 이벤트에 모델의 애니메이션을
+                      연계하였습니다.
                     </li>
                     <li>
-                      Lorem Ipsum is simply dummy text of the printing anddd
-                      ddddd d dddd dddd dd ddd dddddddd
+                      <strong>ease-in, ease-out</strong> 등 transition을 수행할
+                      때 <strong>bezier-curve</strong>를 적용하여 사용자에게
+                      보다 자연스럽게 보이도록 하였습니다.
                     </li>
                     <li>
-                      Lorem Ipsum is simply dummy text of the printing anddd
-                      ddddd dd ddd ddd ddd ddd dddddddd
-                    </li>
-                    <li>
-                      Lorem Ipsum is simply dummy text of the printing anddd
+                      이미지 출력을 위한 별도의 CDN 서버를 두어 이미지 로딩시간
+                      및 웹서버의 부하를 줄였습니다.
                     </li>
                   </ul>
-                  <div class="btn_container">
-                    <a
-                      href="https://github.com/banma1234/portfolio"
-                      target="_blank"
-                    >
-                      <button><p>README</p></button>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -218,19 +236,29 @@
               </div>
             </div>
             <div id="moving-background">독립적으로 움직이는 배경</div>
-            <div class="slide slide-left" id="slide5">
-              <div class="slide-big-text">
-                <p>봄가을은</p>
-                <p>당신의 풍요로운</p>
-                <p>나날을 꿈꿉니다.</p>
-              </div>
-              <div class="go-surf-wrapper">
-                <a href="https://springfall.cc/post/5" target="_blank"
-                  >이 코드의 설명을 보려면 여기를 눌르세요.</a
-                >
-              </div>
-            </div>
           </div>
+        </div>
+      </div>
+      <div id="modal">
+        <div id="modal_body">
+          <div class="btn_container_modal">
+            <p id="modal_close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2rem"
+                height="2rem"
+                fill="currentColor"
+                class="bi bi-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </p>
+          </div>
+          <img src="" alt="" />
+          <div></div>
         </div>
       </div>
     </main>
