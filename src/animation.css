@@ -136,11 +136,11 @@
   height: 100%;
   background-color: #fff;
   position: absolute;
-  transition: all 0.7s ease;
+  transition: all 0.7s cubic-bezier(0.3, 1, 0.1, 0.9);
 }
 .btn_container button:hover:before {
   left: 0;
 }
 .btn_container button:hover p {
-  color: #2f2f2f;
+  color: #07c;
 }
