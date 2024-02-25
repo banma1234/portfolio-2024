@@ -1,7 +1,7 @@
 const TOC = document.getElementById("TOC");
 const tocItems = document.querySelectorAll(".TOC_items");
 const slides = document.querySelectorAll(
-  "#slide0, #slide1, #slide2, #slide3, #slide4, #slide5",
+  "#slide0, #slide5, #slide1, #slide2, #slide3, #slide4",
 );
 
 tocItems.forEach((item, index) => (item.dataset.index = index));
@@ -12,15 +12,17 @@ TOC.addEventListener("click", e => {
     const index = +e.target.dataset.index;
     switch (index) {
       case 0:
-        console.log("000");
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         break;
       case 1:
-        window.scrollTo({ top: 1200, left: 0, behavior: "smooth" });
+        window.scrollTo({ top: 1100, left: 0, behavior: "smooth" });
+        break;
+      case 2:
+        window.scrollTo({ top: 2650, left: 0, behavior: "smooth" });
         break;
       default:
         window.scrollTo({
-          top: 3600 + 1400 * (index - 2),
+          top: 5600 + 1400 * (index - 3),
           left: 0,
           behavior: "smooth",
         });

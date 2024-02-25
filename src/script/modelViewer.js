@@ -30,7 +30,7 @@ let camera = new THREE.PerspectiveCamera(
   0.52,
   window.innerWidth / window.innerHeight,
   1,
-  10000
+  10000,
 );
 camera.position.set(0, 0, 150);
 
@@ -81,12 +81,11 @@ loader.load("image/react.glb", function (gltf) {
 
       renderer.render(scene, camera);
     }
-    console.log(rotationX);
 
-    /** 카드제어(상당히 짜침) */
-    if (rotationX >= 5.7) {
+    /** 스크롤 제어(상당히 짜침) */
+    if (rotationX >= 9.6) {
       card2.style.display = "none";
-    } else if (rotationX < 5.7) {
+    } else if (rotationX < 9.6) {
       card2.style.display = "block";
     }
 

@@ -35,11 +35,11 @@ const slide = new Map([
     },
   ],
   [
-    "slide1",
+    "slide5",
     {
-      id: "slide1",
+      id: "slide5",
       top: 1100,
-      bottom: 3500,
+      bottom: 2400,
       topStyle: {
         opacity: 0,
         translateY: -60,
@@ -52,7 +52,7 @@ const slide = new Map([
         {
           enabled: false,
           top: 1100,
-          bottom: 3500,
+          bottom: 2400,
           easing: midSlow,
           styles: [
             {
@@ -65,7 +65,7 @@ const slide = new Map([
         {
           enabled: false,
           top: 1100,
-          bottom: 1400,
+          bottom: 1700,
           easing: ease,
           styles: [
             {
@@ -77,8 +77,65 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 2900,
-          bottom: 3500,
+          top: 1800,
+          bottom: 2400,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "slide1",
+    {
+      id: "slide1",
+      top: 2400,
+      bottom: 4800,
+      topStyle: {
+        opacity: 0,
+        translateY: -60,
+      },
+      bottomStyle: {
+        opacity: 0,
+        translateY: 60,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 2400,
+          bottom: 4800,
+          easing: midSlow,
+          styles: [
+            {
+              name: "translateY",
+              topValue: 60,
+              bottomValue: -60,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 2400,
+          bottom: 2700,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 4200,
+          bottom: 4800,
           easing: easeIn,
           styles: [
             {
@@ -95,63 +152,6 @@ const slide = new Map([
     "slide2",
     {
       id: "slide2",
-      top: 3600,
-      bottom: 4900,
-      topStyle: {
-        opacity: 0,
-        translateY: -60,
-      },
-      bottomStyle: {
-        opacity: 0,
-        translateY: 60,
-      },
-      animations: [
-        {
-          enabled: false,
-          top: 3600,
-          bottom: 4900,
-          easing: midSlow,
-          styles: [
-            {
-              name: "translateY",
-              topValue: 60,
-              bottomValue: -60,
-            },
-          ],
-        },
-        {
-          enabled: false,
-          top: 3600,
-          bottom: 4200,
-          easing: ease,
-          styles: [
-            {
-              name: "opacity",
-              topValue: 0,
-              bottomValue: 1,
-            },
-          ],
-        },
-        {
-          enabled: false,
-          top: 4300,
-          bottom: 4900,
-          easing: easeIn,
-          styles: [
-            {
-              name: "opacity",
-              topValue: 1,
-              bottomValue: 0,
-            },
-          ],
-        },
-      ],
-    },
-  ],
-  [
-    "slide3",
-    {
-      id: "slide3",
       top: 5000,
       bottom: 6300,
       topStyle: {
@@ -204,9 +204,9 @@ const slide = new Map([
     },
   ],
   [
-    "slide4",
+    "slide3",
     {
-      id: "slide4",
+      id: "slide3",
       top: 6400,
       bottom: 7700,
       topStyle: {
@@ -259,9 +259,9 @@ const slide = new Map([
     },
   ],
   [
-    "slide5",
+    "slide4",
     {
-      id: "slide5",
+      id: "slide4",
       top: 7800,
       bottom: 9100,
       topStyle: {
@@ -301,6 +301,7 @@ const slide = new Map([
     },
   ],
 ]);
+
 const components = new Map([
   [
     "canvas",
@@ -384,8 +385,8 @@ const components = new Map([
     "card_1",
     {
       id: "card_1",
-      top: 900,
-      bottom: 2200,
+      top: 2200,
+      bottom: 3500,
       topStyle: {
         opacity: 0,
         translateX: -400,
@@ -397,8 +398,8 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 900,
-          bottom: 1600,
+          top: 2200,
+          bottom: 2900,
           easing: ease,
           styles: [
             {
@@ -415,8 +416,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 1600,
-          bottom: 2200,
+          top: 2900,
+          bottom: 3500,
           easing: easeIn,
           styles: [
             {
@@ -438,8 +439,8 @@ const components = new Map([
     "card_2",
     {
       id: "card_2",
-      top: 900,
-      bottom: 2200,
+      top: 2200,
+      bottom: 3500,
       topStyle: {
         opacity: 0,
         translateX: 400,
@@ -451,8 +452,8 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 900,
-          bottom: 1600,
+          top: 2200,
+          bottom: 2900,
           easing: ease,
           styles: [
             {
@@ -469,8 +470,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 1600,
-          bottom: 2200,
+          top: 2900,
+          bottom: 3500,
           easing: easeIn,
           styles: [
             {
@@ -492,8 +493,8 @@ const components = new Map([
     "card_3",
     {
       id: "card_3",
-      top: 2000,
-      bottom: 3400,
+      top: 3300,
+      bottom: 4700,
       topStyle: {
         opacity: 0,
         translateX: -400,
@@ -505,8 +506,8 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 2000,
-          bottom: 2700,
+          top: 3300,
+          bottom: 4000,
           easing: ease,
           styles: [
             {
@@ -523,8 +524,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 2700,
-          bottom: 3400,
+          top: 4000,
+          bottom: 4700,
           easing: easeIn,
           styles: [
             {
@@ -546,8 +547,8 @@ const components = new Map([
     "card_4",
     {
       id: "card_4",
-      top: 2000,
-      bottom: 3400,
+      top: 3300,
+      bottom: 4700,
       topStyle: {
         opacity: 0,
         translateX: 400,
@@ -559,8 +560,8 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 2000,
-          bottom: 2700,
+          top: 3300,
+          bottom: 4000,
           easing: ease,
           styles: [
             {
@@ -577,8 +578,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 2700,
-          bottom: 3400,
+          top: 4000,
+          bottom: 4700,
           easing: easeIn,
           styles: [
             {
