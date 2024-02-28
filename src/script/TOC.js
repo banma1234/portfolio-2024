@@ -1,13 +1,13 @@
 const TOC = document.getElementById("TOC");
 const tocItems = document.querySelectorAll(".TOC_items");
 const slides = document.querySelectorAll(
-  "#slide0, #slide5, #slide1, #slide2, #slide3, #slide4",
+  "#slide0, #slide5, #slide1, #slide2, #slide3, #slide4"
 );
 
 tocItems.forEach((item, index) => (item.dataset.index = index));
 slides.forEach((slide, index) => (slide.dataset.index = index));
 
-TOC.addEventListener("click", e => {
+TOC.addEventListener("click", (e) => {
   if (e.target.matches(".TOC_items")) {
     const index = +e.target.dataset.index;
     switch (index) {
@@ -32,8 +32,8 @@ TOC.addEventListener("click", e => {
 
 let selectedIndex = 0;
 const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
+  (entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         tocItems[selectedIndex].classList.remove("selected");
         selectedIndex = entry.target.dataset.index;
@@ -45,7 +45,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.8 },
+  { threshold: 0.8 }
 );
 
-slides.forEach(slide => observer.observe(slide));
+slides.forEach((slide) => observer.observe(slide));

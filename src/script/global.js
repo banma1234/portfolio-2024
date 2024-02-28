@@ -3,7 +3,7 @@ const imagChange = document.querySelectorAll(".img_change");
 const imageMap = ["image/profile.png", "image/profile_2.jpg"];
 
 imagChange.forEach((item, i) => {
-  item.addEventListener("mouseover", e => {
+  item.addEventListener("mouseover", (e) => {
     image.classList.add("fade_out");
     setTimeout(() => {
       image.src = imageMap[i];
@@ -18,7 +18,7 @@ const modal = document.getElementById("modal");
 const modalBody = document.querySelector("#modal_body > img");
 const modalClose = document.getElementById("modal_close");
 
-carousel.forEach(img => {
+carousel.forEach((img) => {
   img.addEventListener("click", () => {
     modal.classList.add("activate");
     modalBody.src = img.src;

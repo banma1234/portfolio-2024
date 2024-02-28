@@ -126,7 +126,7 @@ function initAnimation() {
 
   // 초기 스타일 적용
   disabled.forEach((obj, id) => {
-    Object.keys(obj.topStyle).forEach(styleName => {
+    Object.keys(obj.topStyle).forEach((styleName) => {
       const pushValue = obj.topStyle[styleName];
       applyStyle(elements[id], styleName, pushValue);
     });
@@ -146,7 +146,7 @@ initAnimation();
  * @param {number} rate
  */
 function applyStyles(id, styles, rate) {
-  styles.forEach(style => {
+  styles.forEach((style) => {
     const { name, topValue, bottomValue } = style;
     const value = getPoint(topValue, bottomValue, rate);
     applyStyle(elements[id], name, value);
@@ -164,7 +164,7 @@ function applyAnimations(currentPos, id) {
     return;
   }
 
-  animations.forEach(animation => {
+  animations.forEach((animation) => {
     const { top: a_top, bottom: a_bottom, easing, styles } = animation;
     const isIn = isAmong(currentPos, a_top, a_bottom);
     // 만약 애니메이션이 새롭게 들어갈 때 혹은 나갈때 enabled 설정
