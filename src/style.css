@@ -30,6 +30,7 @@
   height: 100%;
 }
 .slide-container h1 {
+  font-size: 2.1rem;
   font-weight: bold;
   color: #39c;
 }
@@ -60,11 +61,6 @@
 }
 #slide1 {
   margin-top: 350px;
-}
-#slide1 .slide-big-text {
-  @media screen and (max-width: 899px) {
-    display: none;
-  }
 }
 #slide1 .slide-small-text {
   @media screen and (max-width: 899px) {
@@ -144,7 +140,7 @@
 
 .card_container {
   display: flex;
-  margin-top: 30px;
+  margin-top: 60px;
   justify-content: center;
   column-gap: 4px;
 
@@ -171,7 +167,7 @@
 #card_4 {
   padding: 20px;
   min-width: 400px;
-  max-width: 600px;
+  max-width: 620px;
   text-align: left;
 }
 #card_1 img {
@@ -246,24 +242,9 @@
   z-index: 999998;
   background-color: rgb(0, 0, 0, 60%);
 }
-#modal_body {
-  position: absolute;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 40px 1fr 40px;
-  top: 50%;
-  margin: 0 auto;
-  width: 520px;
-  height: auto;
-  z-index: 999999;
-  border-radius: 10px;
-  transform: translateY(-50%);
-  background-color: #2f2f2f;
-  box-shadow: 0 10px 14px rgb(0 0 0 / 40%);
-}
 #modal_body img {
-  width: 100%;
-  height: auto;
+  height: 520px;
+  width: auto;
 }
 .btn_container_modal {
   display: flex;
@@ -283,4 +264,5 @@
   margin-top: -80px;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgb(0, 119, 204, 30%);
 }
