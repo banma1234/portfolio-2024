@@ -2,7 +2,7 @@ import * as THREE from "https://unpkg.com/three/build/three.module.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 const scene = new THREE.Scene();
-const card2 = document.getElementById("card_2");
+const project = document.querySelectorAll(".blog, .portfolio");
 const canvas = document.getElementById("canvas");
 const renderer = new THREE.WebGLRenderer({
   antialias: true,
@@ -30,7 +30,7 @@ let camera = new THREE.PerspectiveCamera(
   0.52,
   window.innerWidth / window.innerHeight,
   1,
-  10000
+  10000,
 );
 camera.position.set(0, 0, 150);
 
@@ -83,18 +83,22 @@ loader.load("image/react.glb", function (gltf) {
     }
 
     /** 스크롤 제어(상당히 짜침) */
-    if (rotationX >= 9.6) {
-      card2.style.display = "none";
-    } else if (rotationX < 9.6) {
-      card2.style.display = "block";
+    if (rotationX >= 2.7) {
+      canvas.style.display = "none";
+    } else if (rotationX < 2.7) {
+      canvas.style.display = "block";
     }
 
-    if (rotationX >= 2.1) {
-      canvas.style.display = "none";
-      canvas.style.zIndex = "0";
-    } else if (rotationX < 2.1) {
-      canvas.style.display = "block";
-      canvas.style.zIndex = "1000000";
+    if (rotationX >= 9.6) {
+      project[0].style.display = "none";
+    } else if (2.7 <= rotationX < 9.6) {
+      project[0].style.display = "block";
+    }
+
+    if (rotationX >= 13.95) {
+      project[1].style.display = "none";
+    } else if (9.6 <= rotationX < 13.95) {
+      project[1].style.display = "block";
     }
   }
 
