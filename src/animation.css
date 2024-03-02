@@ -19,7 +19,7 @@
   background-color: #2f2f2f;
   border-radius: 100%;
   -webkit-animation: sdb 2s infinite;
-  animation: sdb 2s infinite;
+  animation: sdb 1.5s infinite;
   box-sizing: border-box;
 }
 
