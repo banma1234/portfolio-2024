@@ -14,7 +14,7 @@ imagChange.forEach((item, i) => {
 
 const body = document.getElementsByTagName("body")[0];
 const carousel = document.querySelectorAll(".icon-cards__item > img");
-const modal = document.getElementById("modal");
+const modal = document.querySelector(".modal");
 const modalBody = document.querySelector("#modal_body > img");
 const modalClose = document.getElementById("modal_close");
 
