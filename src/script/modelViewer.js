@@ -1,8 +1,8 @@
-import * as THREE from "https://unpkg.com/three/build/three.module.js";
+import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 const scene = new THREE.Scene();
-const project = document.querySelectorAll(".blog, .portfolio");
+const slides = document.querySelectorAll(".blog, .portfolio");
 const canvas = document.getElementById("canvas");
 const renderer = new THREE.WebGLRenderer({
   antialias: true,
@@ -22,7 +22,6 @@ let currentScale = 1;
 /** isHover = 마우스 호버 여부 */
 let isHover = false;
 
-renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth * 0.5, window.innerHeight * 0.5);
 
@@ -89,16 +88,16 @@ loader.load("image/react.glb", function (gltf) {
       canvas.style.display = "block";
     }
 
-    if (rotationX >= 9.6) {
-      project[0].style.display = "none";
-    } else if (2.7 <= rotationX < 9.6) {
-      project[0].style.display = "block";
+    if (rotationX >= 9.6 || rotationX <= 5.7) {
+      slides[0].style.display = "none";
+    } else if (rotationX < 9.6) {
+      slides[0].style.display = "block";
     }
 
-    if (rotationX >= 13.95) {
-      project[1].style.display = "none";
-    } else if (9.6 <= rotationX < 13.95) {
-      project[1].style.display = "block";
+    if (rotationX >= 13.5 || rotationX <= 9.6) {
+      slides[1].style.display = "none";
+    } else if (rotationX < 13.5) {
+      slides[1].style.display = "block";
     }
   }
 
