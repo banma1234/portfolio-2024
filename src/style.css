@@ -14,6 +14,10 @@
   margin: 0 auto;
   top: 20px;
   z-index: 1000000;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .slide {
@@ -103,7 +107,7 @@
   right: 3%;
   height: 100%;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1034px) {
     display: none;
   }
 }
@@ -131,10 +135,15 @@
 
 .portfolio,
 .blog {
+  display: none;
   position: absolute;
   margin: 0 auto;
   top: 150px;
   z-index: 999;
+
+  @media screen and (max-width: 899px) {
+    top: 100px;
+  }
 }
 .portfolio {
   z-index: 997;
@@ -158,9 +167,6 @@
   padding-top: 18px;
   font-size: 1.1rem;
   color: #2f2f2f;
-}
-.card_container li strong {
-  color: #000;
 }
 #card_1,
 #card_2,
@@ -270,8 +276,9 @@
 .tag {
   margin: 15px;
   padding-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
   display: flex;
-  column-gap: 10px;
 }
 .tag span {
   padding: 0.4rem 0.6rem;
@@ -279,4 +286,9 @@
   color: #fff;
   border-radius: 20px;
   font-size: 0.9rem;
+}
+
+button span {
+  display: flex;
+  align-items: center;
 }

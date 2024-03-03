@@ -67,6 +67,10 @@
   margin: 0 auto;
   perspective: 1000px;
   transform-origin: center;
+
+  @media screen and (max-width: 899px) {
+    display: none;
+  }
 }
 .icon-cards__content {
   position: absolute;
