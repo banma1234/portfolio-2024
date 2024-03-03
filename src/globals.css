@@ -13,9 +13,32 @@ body {
   display: grid;
   grid-template-columns: 1fr 120px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1034px) {
     grid-template-columns: 1fr;
   }
+}
+
+header {
+  z-index: 99999999999999;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 40px;
+  padding-right: 50px;
+  width: 100%;
+  height: 40px;
+  box-shadow: 0 6px 10px rgb(0 0 0 / 10%);
+}
+header p {
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.6;
+}
+header p:hover {
+  opacity: 1;
+  color: #000;
+  transition: all 0.3s;
 }
 
 *,
