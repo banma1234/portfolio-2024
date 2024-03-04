@@ -333,6 +333,63 @@ const components = new Map([
     },
   ],
   [
+    "canvas2",
+    {
+      id: "canvas2",
+      top: 1100,
+      bottom: 2400,
+      topStyle: {
+        opacity: 0,
+        translateY: -60,
+      },
+      bottomStyle: {
+        opacity: 0,
+        translateY: 60,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 1100,
+          bottom: 2400,
+          easing: midSlow,
+          styles: [
+            {
+              name: "translateY",
+              topValue: 60,
+              bottomValue: -60,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 1100,
+          bottom: 1700,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 1800,
+          bottom: 2400,
+          easing: easeIn,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "moving-background",
     {
       id: "moving-background",

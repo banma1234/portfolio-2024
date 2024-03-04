@@ -41,6 +41,11 @@ header p:hover {
   transition: all 0.3s;
 }
 
+canvas {
+  position: absolute;
+  margin: 0 auto;
+}
+
 *,
 *:before,
 *:after {
@@ -63,6 +68,7 @@ ul {
 }
 
 li {
+  text-align: left;
   list-style: none;
 }
 

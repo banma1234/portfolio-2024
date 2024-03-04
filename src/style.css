@@ -10,14 +10,17 @@
 }
 
 #canvas {
-  position: absolute;
-  margin: 0 auto;
   top: 20px;
   z-index: 1000000;
 
   @media screen and (max-width: 1024px) {
     display: none;
   }
+}
+#canvas2 {
+  display: none;
+  z-index: 1000002;
+  border: 1px solid black;
 }
 
 .slide {
@@ -112,7 +115,6 @@
   }
 }
 #TOC ul {
-  text-align: left;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -175,7 +177,6 @@
   padding: 20px;
   min-width: 400px;
   max-width: 620px;
-  text-align: left;
 }
 #card_1 img {
   width: auto;

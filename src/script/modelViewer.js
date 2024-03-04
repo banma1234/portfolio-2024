@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
+// canvas 1
 const scene = new THREE.Scene();
 const slides = document.querySelectorAll(".blog, .portfolio");
 const canvas = document.getElementById("canvas");
@@ -36,12 +37,41 @@ camera.position.set(0, 0, 150);
 const light = new THREE.DirectionalLight(0xffffff, 10);
 scene.add(light);
 
-const loader = new GLTFLoader();
+// canvas2
+const scene2 = new THREE.Scene();
+const canvas2 = document.getElementById("canvas2");
+const renderer2 = new THREE.WebGLRenderer({
+  antialias: true,
+  canvas: canvas2,
+  alpha: true,
+});
 
+/** isDrag = 마우스 드래그 여부 */
+let isDrag = false;
+/** previousMousePosition = 마우스 이전 좌표 */
+let previousMousePosition = {
+  x: 0,
+  y: 0,
+};
+
+renderer2.setPixelRatio(window.devicePixelRatio);
+renderer2.setSize(window.innerWidth * 0.6, window.innerHeight * 0.6);
+
+let camera2 = new THREE.PerspectiveCamera(
+  0.3,
+  window.innerWidth / window.innerHeight,
+  1,
+  10000,
+);
+camera2.position.set(0, 0, 150);
+
+const light2 = new THREE.DirectionalLight(0xffffff, 10);
+scene2.add(light2);
+
+const loader = new GLTFLoader();
 loader.load("image/react.glb", function (gltf) {
   /** 3D모델 */
   const model = gltf.scene;
-
   scene.add(model);
 
   /** @param {number} timestamp 마우스 호버에 따라 스케일 증감 */
@@ -84,13 +114,16 @@ loader.load("image/react.glb", function (gltf) {
     /** 스크롤 제어(상당히 짜침) */
     if (rotationX >= 2.7) {
       canvas.style.display = "none";
+      canvas2.style.display = "block";
     } else if (rotationX < 2.7) {
       canvas.style.display = "block";
+      canvas2.style.display = "none";
     }
 
     if (rotationX >= 9.6 || rotationX <= 5.7) {
       slides[0].style.display = "none";
     } else if (rotationX < 9.6) {
+      canvas2.style.display = "none";
       slides[0].style.display = "block";
     }
 
@@ -119,6 +152,59 @@ loader.load("image/react.glb", function (gltf) {
     scaleMouseHover(performance.now());
 
     renderer.render(scene, camera);
+  }
+
+  animate();
+});
+
+const loader2 = new GLTFLoader();
+loader2.load("image/react.glb", function (gltf) {
+  /** 3D모델 */
+  const model = gltf.scene;
+  scene2.add(model);
+
+  // 모델의 bounding box 계산
+  const boundingBox = new THREE.Box3().setFromObject(model);
+
+  // bounding box의 중심을 구함
+  const center = new THREE.Vector3();
+  boundingBox.getCenter(center);
+
+  // 모델의 지오메트리를 이동시켜 중심을 원점으로 맞춤
+  model.position.x += model.position.x - center.x;
+  model.position.y += model.position.y - center.y;
+  model.position.z += model.position.z - center.z;
+
+  // 이벤트 리스너 등록
+  window.addEventListener("mouseup", () => {
+    isDrag = false;
+  });
+  renderer2.domElement.addEventListener("mousedown", e => {
+    isDrag = true;
+    previousMousePosition.x = e.clientX;
+    previousMousePosition.y = e.clientY;
+  });
+  renderer2.domElement.addEventListener("mousemove", e => {
+    if (isDrag) {
+      const rotationSpeed = 0.005;
+      const deltaMove = {
+        x: e.clientX - previousMousePosition.x,
+        y: e.clientY - previousMousePosition.y,
+      };
+
+      model.rotation.x += deltaMove.y * (Math.PI / 180) * 0.5;
+      model.rotation.y += deltaMove.x * (Math.PI / 180) * 0.5;
+      model.rotation.z += deltaMove.x * rotationSpeed;
+
+      previousMousePosition.x = e.clientX;
+      previousMousePosition.y = e.clientY;
+    }
+  });
+
+  /** 애니메이션 반복수행 */
+  function animate() {
+    requestAnimationFrame(animate);
+    renderer2.render(scene2, camera2);
   }
 
   animate();
