@@ -67,10 +67,9 @@
   margin-top: 200px;
 }
 #slide1 {
-  top: 80px;
+  top: 8vw;
 }
 #slide1 .slide-big-text {
-  bottom: 100px;
   @media screen and (max-width: 899px) {
     display: none;
   }
@@ -140,7 +139,7 @@
   display: none;
   position: absolute;
   margin: 0 auto;
-  top: 150px;
+  top: 15vw;
   z-index: 999;
 
   @media screen and (max-width: 899px) {
