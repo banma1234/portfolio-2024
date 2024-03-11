@@ -3,7 +3,7 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 // canvas 1
 const scene = new THREE.Scene();
-const slides = document.querySelectorAll(".blog, .portfolio");
+const slides = document.querySelectorAll(".blog, .portfolio, #post-container");
 const canvas = document.getElementById("canvas");
 const renderer = new THREE.WebGLRenderer({
   antialias: true,
@@ -30,7 +30,7 @@ let camera = new THREE.PerspectiveCamera(
   0.52,
   window.innerWidth / window.innerHeight,
   1,
-  10000
+  10000,
 );
 camera.position.set(0, 0, 150);
 
@@ -61,7 +61,7 @@ let camera2 = new THREE.PerspectiveCamera(
   0.3,
   window.innerWidth / window.innerHeight,
   1,
-  10000
+  10000,
 );
 camera2.position.set(0, 0, 150);
 
@@ -105,6 +105,7 @@ loader.load("image/react.glb", function (gltf) {
   /** 스크롤 내릴시 모델 회전 */
   function rotateWhileScroll() {
     const rotationX = window.scrollY * 0.003;
+    console.log(rotationX);
     if (rotationX <= 2.7) {
       model.rotation.z += rotationX / 20;
 
@@ -112,25 +113,36 @@ loader.load("image/react.glb", function (gltf) {
     }
 
     /** 스크롤 제어(상당히 짜침) */
-    if (rotationX >= 2.7) {
-      canvas.style.display = "none";
-      canvas2.style.display = "block";
-    } else if (rotationX < 2.7) {
+    if (rotationX < 2.7) {
       canvas.style.display = "block";
+    } else {
+      canvas.style.display = "none";
+    }
+
+    if (2.7 <= rotationX && rotationX < 5.7) {
+      canvas2.style.display = "block";
+    } else {
       canvas2.style.display = "none";
     }
 
-    if (rotationX >= 9.6 || rotationX <= 5.7) {
-      slides[0].style.display = "none";
-    } else if (rotationX < 9.6) {
-      canvas2.style.display = "none";
+    if (5.7 <= rotationX && rotationX < 9.6) {
       slides[0].style.display = "block";
+      console.log("blog");
+    } else {
+      slides[0].style.display = "none";
     }
 
-    if (rotationX >= 13.5 || rotationX <= 9.6) {
-      slides[1].style.display = "none";
-    } else if (rotationX < 13.5) {
+    if (9.6 <= rotationX && rotationX < 13.5) {
       slides[1].style.display = "block";
+      console.log("portfolio");
+    } else {
+      slides[1].style.display = "none";
+    }
+
+    if (18.6 <= rotationX && rotationX < 22.8) {
+      slides[2].style.display = "flex";
+    } else {
+      slides[2].style.display = "none";
     }
   }
 
@@ -179,12 +191,12 @@ loader2.load("image/react.glb", function (gltf) {
   window.addEventListener("mouseup", () => {
     isDrag = false;
   });
-  renderer2.domElement.addEventListener("mousedown", (e) => {
+  renderer2.domElement.addEventListener("mousedown", e => {
     isDrag = true;
     previousMousePosition.x = e.clientX;
     previousMousePosition.y = e.clientY;
   });
-  renderer2.domElement.addEventListener("mousemove", (e) => {
+  renderer2.domElement.addEventListener("mousemove", e => {
     if (isDrag) {
       const rotationSpeed = 0.005;
       const deltaMove = {

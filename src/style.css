@@ -67,12 +67,15 @@
   margin-top: 200px;
 }
 #slide1 {
-  top: 8vw;
+  bottom: 6vw;
 }
 #slide1 .slide-big-text {
   @media screen and (max-width: 899px) {
     display: none;
   }
+}
+#slide3 {
+  bottom: 10vw;
 }
 
 #scroll-down {
@@ -139,7 +142,7 @@
   display: none;
   position: absolute;
   margin: 0 auto;
-  top: 15vw;
+  top: 8vw;
   z-index: 999;
 
   @media screen and (max-width: 899px) {
@@ -208,7 +211,6 @@
 }
 .btn_container button p {
   text-align: center;
-  text-transform: uppercase;
   color: #fff;
   position: relative;
   z-index: 1;
@@ -291,4 +293,63 @@
 button span {
   display: flex;
   align-items: center;
+}
+
+.post {
+  background-color: greenyellow;
+  margin: 1.5rem;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+.post h2,
+.post p {
+  padding: 0.8rem;
+}
+
+#post-container {
+  position: absolute;
+  display: none;
+  z-index: 1005;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.post {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.post:hover {
+  transform: translateY(-1rem);
+}
+.post:hover .overlap {
+  opacity: 1;
+}
+.post:hover img {
+  transform: scale(1.2);
+}
+
+.img_overlay {
+  width: 270px;
+  height: 170px;
+  overflow: hidden;
+}
+.img_overlay img {
+  z-index: 1;
+  transition: transform 0.5s;
+}
+
+.overlap {
+  z-index: 9999999999999;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 170px;
+  background-color: rgba(0, 0, 0, 60%);
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.overlap h1 {
+  color: #fff;
 }
