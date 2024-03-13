@@ -91,24 +91,26 @@
   max-width: 340px;
   max-height: 220px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
+  background-color: black;
+  border-radius: 10px;
   transform-origin: center;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  overflow: hidden;
 }
 .icon-cards__item:nth-child(1) {
   transform: rotateX(0) translateZ(12vw);
-  box-shadow: 0 8px 12px rgb(0 0 0 / 20%);
+  box-shadow: 0 8px 14px rgb(0, 0, 0, 35%);
 }
 .icon-cards__item:nth-child(2) {
   transform: rotateX(120deg) translateZ(12vw);
-  box-shadow: 0 8px 12px rgb(0 0 0 / 20%);
+  box-shadow: 0 8px 14px rgb(0, 0, 0, 35%);
 }
 .icon-cards__item:nth-child(3) {
   transform: rotateX(240deg) translateZ(12vw);
-  box-shadow: 0 8px 12px rgb(0 0 0 / 20%);
+  box-shadow: 0 8px 14px rgb(0, 0, 0, 35%);
 }
 
 /* 케러셀 애니메이션 */
@@ -146,7 +148,8 @@
   left: 0;
 }
 .btn_container button:hover p {
-  color: #07c;
+  /* color: #07c; */
+  color: #0f0f0f;
 }
 
 /* 모달 애니메이션 */
@@ -166,11 +169,12 @@
   grid-template-rows: 40px 1fr 40px;
   top: 50%;
   margin: 0 auto;
-  min-width: 520px;
+  width: 860px;
   z-index: 999999;
   border-radius: 10px;
   transform: translateY(-50%);
-  background-color: #2f2f2f;
+  background-color: #0e0e0e;
   box-shadow: 0 10px 14px rgb(0 0 0 / 40%);
   animation: modal_open 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  overflow: hidden;
 }
