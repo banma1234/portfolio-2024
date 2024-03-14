@@ -105,12 +105,13 @@ loader.load("image/react.glb", function (gltf) {
   /** 스크롤 내릴시 모델 회전 */
   function rotateWhileScroll() {
     const rotationX = window.scrollY * 0.003;
-    console.log(rotationX);
     if (rotationX <= 2.7) {
       model.rotation.z += rotationX / 20;
 
       renderer.render(scene, camera);
     }
+
+    console.log(rotationX);
 
     /** 스크롤 제어(상당히 짜침) */
     if (rotationX < 2.7) {
@@ -127,19 +128,17 @@ loader.load("image/react.glb", function (gltf) {
 
     if (5.7 <= rotationX && rotationX < 9.6) {
       slides[0].style.display = "block";
-      console.log("blog");
     } else {
       slides[0].style.display = "none";
     }
 
     if (9.6 <= rotationX && rotationX < 13.5) {
       slides[1].style.display = "block";
-      console.log("portfolio");
     } else {
       slides[1].style.display = "none";
     }
 
-    if (18.6 <= rotationX && rotationX < 22.8) {
+    if (21.2 <= rotationX && rotationX < 25) {
       slides[2].style.display = "flex";
     } else {
       slides[2].style.display = "none";

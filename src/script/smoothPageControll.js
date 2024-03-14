@@ -61,6 +61,8 @@ const elements = {
   card_2: document.getElementById("card_2"),
   card_3: document.getElementById("card_3"),
   card_4: document.getElementById("card_4"),
+  opensource_1: document.getElementById("opensource_1"),
+  opensource_2: document.getElementById("opensource_2"),
   "post-container": document.getElementById("post-container"),
   "sticky-container": document.getElementById("sticky-container"),
   //"moving-background": document.getElementById("moving-background"),
@@ -119,7 +121,7 @@ window.addEventListener("scroll", onScroll);
 
 function initAnimation() {
   // Sticky Conainer 의 높이를 설정함.
-  elements["sticky-container"].style.height = `9000px`;
+  elements["sticky-container"].style.height = `9600px`;
 
   // 모든 요소를 disabled 에 넣음.
   def.forEach((obj, id) => {

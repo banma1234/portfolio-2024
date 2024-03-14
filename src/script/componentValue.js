@@ -153,31 +153,33 @@ const slide = new Map([
     {
       id: "slide2",
       top: 5000,
-      bottom: 6300,
+      bottom: 7400,
       topStyle: {
         opacity: 0,
+        translateY: -40,
       },
       bottomStyle: {
         opacity: 0,
+        translateY: 40,
       },
       animations: [
         {
           enabled: false,
           top: 5000,
-          bottom: 6300,
+          bottom: 7400,
           easing: midSlow,
           styles: [
             {
               name: "translateY",
-              topValue: 60,
-              bottomValue: -60,
+              topValue: 40,
+              bottomValue: -40,
             },
           ],
         },
         {
           enabled: false,
           top: 5000,
-          bottom: 5600,
+          bottom: 5800,
           easing: ease,
           styles: [
             {
@@ -189,8 +191,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 5700,
-          bottom: 6300,
+          top: 6600,
+          bottom: 7400,
           easing: easeIn,
           styles: [
             {
@@ -207,8 +209,8 @@ const slide = new Map([
     "slide3",
     {
       id: "slide3",
-      top: 6400,
-      bottom: 7700,
+      top: 7500,
+      bottom: 8800,
       topStyle: {
         opacity: 0,
       },
@@ -218,8 +220,8 @@ const slide = new Map([
       animations: [
         {
           enabled: false,
-          top: 6400,
-          bottom: 7700,
+          top: 7500,
+          bottom: 8800,
           easing: midSlow,
           styles: [
             {
@@ -231,8 +233,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 6400,
-          bottom: 7000,
+          top: 7500,
+          bottom: 8100,
           easing: ease,
           styles: [
             {
@@ -244,8 +246,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 7100,
-          bottom: 7700,
+          top: 8200,
+          bottom: 8800,
           easing: easeIn,
           styles: [
             {
@@ -262,8 +264,8 @@ const slide = new Map([
     "slide4",
     {
       id: "slide4",
-      top: 7800,
-      bottom: 9100,
+      top: 8900,
+      bottom: 9500,
       topStyle: {
         opacity: 0,
       },
@@ -273,8 +275,8 @@ const slide = new Map([
       animations: [
         {
           enabled: false,
-          top: 7800,
-          bottom: 8400,
+          top: 8900,
+          bottom: 9500,
           easing: ease,
           styles: [
             {
@@ -284,19 +286,19 @@ const slide = new Map([
             },
           ],
         },
-        {
-          enabled: false,
-          top: 8500,
-          bottom: 9100,
-          easing: easeIn,
-          styles: [
-            {
-              name: "opacity",
-              topValue: 1,
-              bottomValue: 0,
-            },
-          ],
-        },
+        // {
+        //   enabled: false,
+        //   top: 9500,
+        //   bottom: 10100,
+        //   easing: easeIn,
+        //   styles: [
+        //     {
+        //       name: "opacity",
+        //       topValue: 1,
+        //       bottomValue: 0,
+        //     },
+        //   ],
+        // },
       ],
     },
   ],
@@ -655,11 +657,11 @@ const components = new Map([
     },
   ],
   [
-    "post-container",
+    "opensource_1",
     {
-      id: "post-container",
-      top: 6400,
-      bottom: 7700,
+      id: "opensource_1",
+      top: 4500,
+      bottom: 6000,
       topStyle: {
         opacity: 0,
       },
@@ -669,8 +671,112 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 6400,
-          bottom: 7700,
+          top: 4500,
+          bottom: 5100,
+          easing: ease,
+          styles: [
+            {
+              name: "translateY",
+              topValue: 120,
+              bottomValue: 0,
+            },
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 5600,
+          bottom: 6000,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+            {
+              name: "translateX",
+              topValue: 0,
+              bottomValue: -600,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "opensource_2",
+    {
+      id: "opensource_2",
+      top: 5500,
+      bottom: 7200,
+      topStyle: {
+        opacity: 0,
+      },
+      bottomStyle: {
+        opacity: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 5500,
+          bottom: 5900,
+          easing: ease,
+          styles: [
+            {
+              name: "translateX",
+              topValue: 600,
+              bottomValue: 0,
+            },
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 6600,
+          bottom: 7200,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+            {
+              name: "translateX",
+              topValue: 0,
+              bottomValue: -600,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "post-container",
+    {
+      id: "post-container",
+      top: 7400,
+      bottom: 8700,
+      topStyle: {
+        opacity: 0,
+      },
+      bottomStyle: {
+        opacity: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 7400,
+          bottom: 8700,
           easing: midSlow,
           styles: [
             {
@@ -682,8 +788,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 6400,
-          bottom: 7000,
+          top: 7400,
+          bottom: 8000,
           easing: ease,
           styles: [
             {
@@ -695,8 +801,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 7100,
-          bottom: 7700,
+          top: 8100,
+          bottom: 8700,
           easing: easeIn,
           styles: [
             {
