@@ -30,7 +30,7 @@ let camera = new THREE.PerspectiveCamera(
   0.52,
   window.innerWidth / window.innerHeight,
   1,
-  10000,
+  10000
 );
 camera.position.set(0, 0, 150);
 
@@ -61,7 +61,7 @@ let camera2 = new THREE.PerspectiveCamera(
   0.3,
   window.innerWidth / window.innerHeight,
   1,
-  10000,
+  10000
 );
 camera2.position.set(0, 0, 150);
 
@@ -190,12 +190,12 @@ loader2.load("image/react.glb", function (gltf) {
   window.addEventListener("mouseup", () => {
     isDrag = false;
   });
-  renderer2.domElement.addEventListener("mousedown", e => {
+  renderer2.domElement.addEventListener("mousedown", (e) => {
     isDrag = true;
     previousMousePosition.x = e.clientX;
     previousMousePosition.y = e.clientY;
   });
-  renderer2.domElement.addEventListener("mousemove", e => {
+  renderer2.domElement.addEventListener("mousemove", (e) => {
     if (isDrag) {
       const rotationSpeed = 0.005;
       const deltaMove = {
