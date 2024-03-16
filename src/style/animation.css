@@ -86,9 +86,9 @@
 }
 .icon-cards__item {
   position: absolute;
-  width: 60vw;
+  width: 62vw;
   height: 40vw;
-  max-width: 340px;
+  max-width: 360px;
   max-height: 220px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   background-color: black;
@@ -148,7 +148,6 @@ button:hover:before {
   left: 0;
 }
 button:hover p {
-  /* color: #07c; */
   color: #fff;
 }
 
@@ -169,7 +168,7 @@ button:hover p {
   grid-template-rows: 40px 1fr 40px;
   top: 50%;
   margin: 0 auto;
-  width: 860px;
+  width: 880px;
   z-index: 999999;
   border-radius: 10px;
   transform: translateY(-50%);
