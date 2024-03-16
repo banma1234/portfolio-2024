@@ -20,12 +20,14 @@ TOC.addEventListener("click", (e) => {
       case 2:
         window.scrollTo({ top: 2650, left: 0, behavior: "smooth" });
         break;
+      case 3:
+        window.scrollTo({ top: 5000, left: 0, behavior: "smooth" });
+        break;
+      case 4:
+        window.scrollTo({ top: 8700, left: 0, behavior: "smooth" });
+        break;
       default:
-        window.scrollTo({
-          top: 5600 + 1200 * (index - 3),
-          left: 0,
-          behavior: "smooth",
-        });
+        window.scrollTo({ top: 12000, left: 0, behavior: "smooth" });
     }
   }
 });
