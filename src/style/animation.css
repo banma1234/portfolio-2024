@@ -134,7 +134,7 @@
 }
 
 /* 버튼 */
-.btn_container button:before {
+button:before {
   top: 0;
   left: -220px;
   content: "";
@@ -144,10 +144,10 @@
   position: absolute;
   transition: all 0.7s cubic-bezier(0.3, 1, 0.1, 0.9);
 }
-.btn_container button:hover:before {
+button:hover:before {
   left: 0;
 }
-.btn_container button:hover p {
+button:hover p {
   /* color: #07c; */
   color: #fff;
 }
