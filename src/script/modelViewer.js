@@ -30,7 +30,7 @@ let camera = new THREE.PerspectiveCamera(
   0.52,
   window.innerWidth / window.innerHeight,
   1,
-  10000,
+  10000
 );
 camera.position.set(0, 0, 150);
 
@@ -61,7 +61,7 @@ let camera2 = new THREE.PerspectiveCamera(
   0.3,
   window.innerWidth / window.innerHeight,
   1,
-  10000,
+  10000
 );
 camera2.position.set(0, 0, 150);
 
@@ -111,8 +111,6 @@ loader.load("image/react.glb", function (gltf) {
       renderer.render(scene, camera);
     }
 
-    // console.log(rotationX);
-
     /** 스크롤 제어(상당히 짜침) */
     if (rotationX < 2.7) {
       canvas.style.display = "block";
@@ -126,19 +124,19 @@ loader.load("image/react.glb", function (gltf) {
       canvas2.style.display = "none";
     }
 
-    if (5.7 <= rotationX && rotationX < 9.6) {
+    if (5.7 <= rotationX && rotationX < 9) {
       slides[0].style.display = "block";
     } else {
       slides[0].style.display = "none";
     }
 
-    if (9.6 <= rotationX && rotationX < 13.5) {
+    if (9 <= rotationX && rotationX < 13.5) {
       slides[1].style.display = "block";
     } else {
       slides[1].style.display = "none";
     }
 
-    if (21.2 <= rotationX && rotationX < 28) {
+    if (22 <= rotationX && rotationX < 31) {
       slides[2].style.display = "flex";
     } else {
       slides[2].style.display = "none";
@@ -190,12 +188,12 @@ loader2.load("image/react.glb", function (gltf) {
   window.addEventListener("mouseup", () => {
     isDrag = false;
   });
-  renderer2.domElement.addEventListener("mousedown", e => {
+  renderer2.domElement.addEventListener("mousedown", (e) => {
     isDrag = true;
     previousMousePosition.x = e.clientX;
     previousMousePosition.y = e.clientY;
   });
-  renderer2.domElement.addEventListener("mousemove", e => {
+  renderer2.domElement.addEventListener("mousemove", (e) => {
     if (isDrag) {
       const rotationSpeed = 0.005;
       const deltaMove = {

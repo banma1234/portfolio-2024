@@ -65,21 +65,19 @@
 #slide0 {
   margin-top: 200px;
 }
-#slide1 {
-  bottom: 6vw;
-}
 #slide1 .slide-big-text {
   @media screen and (max-width: 899px) {
     display: none;
   }
 }
+#slide1,
 #slide2,
 #slide3 {
   bottom: 6vw;
 }
 #slide3 button {
-  margin-top: 1rem;
-  font-size: 1.1rem;
+  margin-top: 2rem;
+  font-size: 1rem;
 }
 
 #scroll-down {
@@ -93,15 +91,6 @@
 #scroll-down p {
   font-size: 0.9rem;
   margin-top: 64px;
-}
-
-#moving-background {
-  width: 500px;
-  padding-top: 40px;
-  height: 500px;
-  background-color: #f2f6fa;
-  color: #777;
-  z-index: -1;
 }
 
 .badge_container {
@@ -168,7 +157,7 @@
   display: flex;
   margin-top: 60px;
   justify-content: center;
-  column-gap: 4px;
+  column-gap: 1rem;
 
   @media screen and (max-width: 899px) {
     flex-direction: column;
@@ -304,7 +293,7 @@ button span {
   box-shadow: 0 8px 12px rgb(0 0 0 / 20%);
   border-radius: 1rem;
   overflow: hidden;
-  background-color: rgb(252, 253, 255);
+  background-color: #fff;
   cursor: pointer;
 }
 .post_article {

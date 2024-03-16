@@ -209,8 +209,8 @@ const slide = new Map([
     "slide3",
     {
       id: "slide3",
-      top: 7500,
-      bottom: 9400,
+      top: 8500,
+      bottom: 10400,
       topStyle: {
         opacity: 0,
       },
@@ -220,8 +220,8 @@ const slide = new Map([
       animations: [
         {
           enabled: false,
-          top: 7500,
-          bottom: 9400,
+          top: 8500,
+          bottom: 10400,
           easing: midSlow,
           styles: [
             {
@@ -233,8 +233,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 7500,
-          bottom: 8400,
+          top: 8500,
+          bottom: 9400,
           easing: ease,
           styles: [
             {
@@ -246,8 +246,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 8500,
-          bottom: 9400,
+          top: 9500,
+          bottom: 10400,
           easing: easeIn,
           styles: [
             {
@@ -264,8 +264,8 @@ const slide = new Map([
     "slide4",
     {
       id: "slide4",
-      top: 9500,
-      bottom: 11000,
+      top: 10500,
+      bottom: 12000,
       topStyle: {
         opacity: 0,
       },
@@ -275,8 +275,8 @@ const slide = new Map([
       animations: [
         {
           enabled: false,
-          top: 9500,
-          bottom: 11000,
+          top: 10500,
+          bottom: 12000,
           easing: ease,
           styles: [
             {
@@ -286,19 +286,6 @@ const slide = new Map([
             },
           ],
         },
-        // {
-        //   enabled: false,
-        //   top: 9500,
-        //   bottom: 10100,
-        //   easing: easeIn,
-        //   styles: [
-        //     {
-        //       name: "opacity",
-        //       topValue: 1,
-        //       bottomValue: 0,
-        //     },
-        //   ],
-        // },
       ],
     },
   ],
@@ -391,55 +378,6 @@ const components = new Map([
       ],
     },
   ],
-  // [
-  //   "moving-background",
-  //   {
-  //     id: "moving-background",
-  //     top: 5000,
-  //     bottom: 6400,
-  //     topStyle: {
-  //       opacity: 0,
-  //       translateY: 300,
-  //     },
-  //     bottomStyle: {
-  //       opacity: 0,
-  //       translateY: 0,
-  //     },
-  //     animations: [
-  //       {
-  //         enabled: false,
-  //         top: 5000,
-  //         bottom: 5800,
-  //         easing: ease,
-  //         styles: [
-  //           {
-  //             name: "opacity",
-  //             topValue: 0,
-  //             bottomValue: 1,
-  //           },
-  //           {
-  //             name: "translateY",
-  //             topValue: 200,
-  //             bottomValue: 0,
-  //           },
-  //         ],
-  //       },
-  //       {
-  //         enabled: false,
-  //         top: 5800,
-  //         bottom: 6400,
-  //         easing: easeIn,
-  //         styles: [
-  //           {
-  //             name: "opacity",
-  //             topValue: 1,
-  //             bottomValue: 0,
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //   },
-  // ],
   [
     "card_1",
     {
@@ -742,7 +680,59 @@ const components = new Map([
         {
           enabled: false,
           top: 6600,
-          bottom: 7200,
+          bottom: 7000,
+          easing: ease,
+          styles: [
+            {
+              name: "opacity",
+              topValue: 1,
+              bottomValue: 0,
+            },
+            {
+              name: "translateX",
+              topValue: 0,
+              bottomValue: -600,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "opensource_3",
+    {
+      id: "opensource_3",
+      top: 6500,
+      bottom: 8200,
+      topStyle: {
+        opacity: 0,
+      },
+      bottomStyle: {
+        opacity: 0,
+      },
+      animations: [
+        {
+          enabled: false,
+          top: 6500,
+          bottom: 6900,
+          easing: ease,
+          styles: [
+            {
+              name: "translateX",
+              topValue: 600,
+              bottomValue: 0,
+            },
+            {
+              name: "opacity",
+              topValue: 0,
+              bottomValue: 1,
+            },
+          ],
+        },
+        {
+          enabled: false,
+          top: 7600,
+          bottom: 8200,
           easing: ease,
           styles: [
             {
@@ -764,8 +754,8 @@ const components = new Map([
     "post-container",
     {
       id: "post-container",
-      top: 7300,
-      bottom: 9400,
+      top: 8200,
+      bottom: 10400,
       topStyle: {
         opacity: 0,
       },
@@ -775,8 +765,8 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 7300,
-          bottom: 9400,
+          top: 8300,
+          bottom: 10400,
           easing: midSlow,
           styles: [
             {
@@ -788,8 +778,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 7200,
-          bottom: 8000,
+          top: 8200,
+          bottom: 9000,
           easing: ease,
           styles: [
             {
@@ -801,8 +791,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 8300,
-          bottom: 9400,
+          top: 9300,
+          bottom: 10400,
           easing: easeIn,
           styles: [
             {
