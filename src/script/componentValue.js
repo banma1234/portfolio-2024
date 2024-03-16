@@ -210,7 +210,7 @@ const slide = new Map([
     {
       id: "slide3",
       top: 7500,
-      bottom: 8800,
+      bottom: 9400,
       topStyle: {
         opacity: 0,
       },
@@ -221,20 +221,20 @@ const slide = new Map([
         {
           enabled: false,
           top: 7500,
-          bottom: 8800,
+          bottom: 9400,
           easing: midSlow,
           styles: [
             {
               name: "translateY",
-              topValue: 60,
-              bottomValue: -60,
+              topValue: 40,
+              bottomValue: -40,
             },
           ],
         },
         {
           enabled: false,
           top: 7500,
-          bottom: 8100,
+          bottom: 8400,
           easing: ease,
           styles: [
             {
@@ -246,8 +246,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 8200,
-          bottom: 8800,
+          top: 8500,
+          bottom: 9400,
           easing: easeIn,
           styles: [
             {
@@ -264,8 +264,8 @@ const slide = new Map([
     "slide4",
     {
       id: "slide4",
-      top: 8900,
-      bottom: 9500,
+      top: 9500,
+      bottom: 11000,
       topStyle: {
         opacity: 0,
       },
@@ -275,8 +275,8 @@ const slide = new Map([
       animations: [
         {
           enabled: false,
-          top: 8900,
-          bottom: 9500,
+          top: 9500,
+          bottom: 11000,
           easing: ease,
           styles: [
             {
@@ -764,8 +764,8 @@ const components = new Map([
     "post-container",
     {
       id: "post-container",
-      top: 7400,
-      bottom: 8700,
+      top: 7300,
+      bottom: 9400,
       topStyle: {
         opacity: 0,
       },
@@ -775,20 +775,20 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 7400,
-          bottom: 8700,
+          top: 7300,
+          bottom: 9400,
           easing: midSlow,
           styles: [
             {
-              name: "translateY",
-              topValue: 60,
-              bottomValue: -60,
+              name: "translateX",
+              topValue: 400,
+              bottomValue: -400,
             },
           ],
         },
         {
           enabled: false,
-          top: 7400,
+          top: 7200,
           bottom: 8000,
           easing: ease,
           styles: [
@@ -801,8 +801,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 8100,
-          bottom: 8700,
+          top: 8300,
+          bottom: 9400,
           easing: easeIn,
           styles: [
             {
