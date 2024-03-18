@@ -17,11 +17,6 @@
     display: none;
   }
 }
-#canvas2 {
-  display: none;
-  z-index: 1000002;
-  border: 1px solid black;
-}
 
 .slide {
   position: absolute;
@@ -78,6 +73,9 @@
 #slide3 button {
   margin-top: 2rem;
   font-size: 1rem;
+}
+#slide5 {
+  bottom: 6vw;
 }
 
 #scroll-down {
@@ -374,8 +372,27 @@ button span {
 }
 
 #opensource_1,
-#opensource_2 {
+#opensource_2,
+#opensource_3 {
   position: absolute;
   padding: 2rem;
   border-left: 1px solid #fff;
+}
+
+#contact {
+  width: 800px;
+  height: 400px;
+  background-color: rgb(231, 240, 255);
+  border-radius: 2rem;
+  position: absolute;
+  overflow: hidden;
+  /* transition: transform 0.15s; */
+}
+#contact_overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999999;
+  opacity: 0;
+  position: absolute;
+  margin: 0 auto;
 }
