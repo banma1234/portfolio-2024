@@ -322,9 +322,9 @@ const components = new Map([
     },
   ],
   [
-    "canvas2",
+    "contact",
     {
-      id: "canvas2",
+      id: "contact",
       top: 1100,
       bottom: 2400,
       topStyle: {
