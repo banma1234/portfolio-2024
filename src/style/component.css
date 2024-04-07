@@ -374,6 +374,7 @@ button span {
 #opensource_1,
 #opensource_2,
 #opensource_3 {
+  display: none;
   position: absolute;
   padding: 2rem;
   border-left: 1px solid #fff;
@@ -386,6 +387,7 @@ button span {
   border-radius: 2rem;
   position: absolute;
   overflow: hidden;
+  display: none;
   /* transition: transform 0.15s; */
 }
 #contact_overlay {
