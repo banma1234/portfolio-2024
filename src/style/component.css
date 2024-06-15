@@ -67,15 +67,13 @@
 }
 #slide1,
 #slide2,
-#slide3 {
+#slide3,
+#slide5 {
   bottom: 6vw;
 }
 #slide3 button {
   margin-top: 2rem;
   font-size: 1rem;
-}
-#slide5 {
-  bottom: 6vw;
 }
 
 #scroll-down {
@@ -393,18 +391,73 @@ button span {
 #contact {
   width: 800px;
   height: 400px;
-  background-color: rgb(231, 240, 255);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   position: absolute;
   overflow: hidden;
   display: none;
-  /* transition: transform 0.15s; */
+  padding: 2rem;
+  background-color: #f9f6fb;
+  border: 2px solid #d9cee1;
 }
 #contact_overlay {
   width: 100%;
   height: 100%;
-  z-index: 9999999999999;
+  z-index: 999995;
   opacity: 0;
   position: absolute;
   margin: 0 auto;
+}
+.contact__profile {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+  margin-left: 5rem;
+
+  .tooltip {
+    display: none;
+  }
+
+  ul {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+.contact__link {
+  display: flex;
+  column-gap: 1rem;
+  margin-top: 2rem;
+
+  li {
+    z-index: 999999;
+    cursor: pointer;
+    list-style: none;
+    padding: 0.6rem 0.6rem 0.3rem 0.6rem;
+    border-radius: 100%;
+    border: 2px solid #84909c;
+    color: #84909c;
+  }
+
+  li:hover {
+    transition: all 0.3s;
+    background-color: lightgray;
+
+    .tooltip {
+      display: block;
+      position: absolute;
+      margin-top: 0.6rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 5rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      background-color: #84909c;
+      color: #fff;
+    }
+  }
 }
