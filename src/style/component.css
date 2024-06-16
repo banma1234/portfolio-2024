@@ -396,7 +396,6 @@ button span {
   overflow: hidden;
   display: none;
   padding: 2rem;
-  background-color: #f9f6fb;
   border: 2px solid #d9cee1;
 }
 #contact_overlay {
@@ -408,9 +407,7 @@ button span {
   margin: 0 auto;
 }
 .contact__profile {
-  border-radius: 100%;
-  width: 250px;
-  height: 250px;
+  width: auto;
 }
 .contact__form {
   display: flex;
