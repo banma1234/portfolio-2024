@@ -149,24 +149,22 @@ const slide = new Map([
     },
   ],
   [
-    "slide2",
+    "slide3",
     {
-      id: "slide2",
+      id: "slide3",
       top: 5000,
-      bottom: 7400,
+      bottom: 6900,
       topStyle: {
         opacity: 0,
-        translateY: -40,
       },
       bottomStyle: {
         opacity: 0,
-        translateY: 40,
       },
       animations: [
         {
           enabled: false,
           top: 5000,
-          bottom: 7400,
+          bottom: 6900,
           easing: midSlow,
           styles: [
             {
@@ -179,7 +177,7 @@ const slide = new Map([
         {
           enabled: false,
           top: 5000,
-          bottom: 5800,
+          bottom: 5900,
           easing: ease,
           styles: [
             {
@@ -191,8 +189,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 6600,
-          bottom: 7400,
+          top: 6000,
+          bottom: 6900,
           easing: easeIn,
           styles: [
             {
@@ -206,21 +204,23 @@ const slide = new Map([
     },
   ],
   [
-    "slide3",
+    "slide2",
     {
-      id: "slide3",
-      top: 8500,
+      id: "slide2",
+      top: 8000,
       bottom: 10400,
       topStyle: {
         opacity: 0,
+        translateY: -40,
       },
       bottomStyle: {
         opacity: 0,
+        translateY: 40,
       },
       animations: [
         {
           enabled: false,
-          top: 8500,
+          top: 8000,
           bottom: 10400,
           easing: midSlow,
           styles: [
@@ -233,8 +233,8 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 8500,
-          bottom: 9400,
+          top: 8000,
+          bottom: 8800,
           easing: ease,
           styles: [
             {
@@ -246,7 +246,7 @@ const slide = new Map([
         },
         {
           enabled: false,
-          top: 9500,
+          top: 9600,
           bottom: 10400,
           easing: easeIn,
           styles: [
@@ -598,8 +598,8 @@ const components = new Map([
     "opensource_1",
     {
       id: "opensource_1",
-      top: 4500,
-      bottom: 6000,
+      top: 7500,
+      bottom: 9000,
       topStyle: {
         opacity: 0,
       },
@@ -609,8 +609,8 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 4500,
-          bottom: 5100,
+          top: 7500,
+          bottom: 8100,
           easing: ease,
           styles: [
             {
@@ -627,8 +627,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 5600,
-          bottom: 6000,
+          top: 8600,
+          bottom: 9000,
           easing: ease,
           styles: [
             {
@@ -650,8 +650,8 @@ const components = new Map([
     "opensource_2",
     {
       id: "opensource_2",
-      top: 5500,
-      bottom: 7200,
+      top: 8500,
+      bottom: 10200,
       topStyle: {
         opacity: 0,
       },
@@ -661,8 +661,8 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 5500,
-          bottom: 5900,
+          top: 8500,
+          bottom: 8900,
           easing: ease,
           styles: [
             {
@@ -679,8 +679,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 6600,
-          bottom: 7000,
+          top: 9600,
+          bottom: 10000,
           easing: ease,
           styles: [
             {
@@ -702,8 +702,8 @@ const components = new Map([
     "opensource_3",
     {
       id: "opensource_3",
-      top: 6500,
-      bottom: 8200,
+      top: 9500,
+      bottom: 11200,
       topStyle: {
         opacity: 0,
       },
@@ -713,8 +713,8 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 6500,
-          bottom: 6900,
+          top: 9500,
+          bottom: 9900,
           easing: ease,
           styles: [
             {
@@ -731,8 +731,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 7600,
-          bottom: 8200,
+          top: 10600,
+          bottom: 11200,
           easing: ease,
           styles: [
             {
@@ -754,8 +754,8 @@ const components = new Map([
     "post-container",
     {
       id: "post-container",
-      top: 8200,
-      bottom: 10400,
+      top: 4700,
+      bottom: 6900,
       topStyle: {
         opacity: 0,
       },
@@ -765,8 +765,8 @@ const components = new Map([
       animations: [
         {
           enabled: false,
-          top: 8300,
-          bottom: 10400,
+          top: 4800,
+          bottom: 6900,
           easing: midSlow,
           styles: [
             {
@@ -778,8 +778,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 8200,
-          bottom: 9000,
+          top: 4700,
+          bottom: 5500,
           easing: ease,
           styles: [
             {
@@ -791,8 +791,8 @@ const components = new Map([
         },
         {
           enabled: false,
-          top: 9300,
-          bottom: 10400,
+          top: 5800,
+          bottom: 6900,
           easing: easeIn,
           styles: [
             {
