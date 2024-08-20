@@ -50,14 +50,6 @@ const components = document.querySelectorAll(
 export function scrollAction(rotationX) {
   const onViewport = [
     rotationX < 2.7,
-    // 2.5 <= rotationX && rotationX < 6, // canvas
-    // 5.7 <= rotationX && rotationX < 9, // contact
-    // 9 <= rotationX && rotationX < 13.5, // blog
-    // 12.9 <= rotationX && rotationX < 16.5, // opensource_1
-    // 15.2 <= rotationX && rotationX < 19.8, // opensource_2
-    // 18.4 <= rotationX && rotationX < 23.2, // opensource_3
-    // 23.5 <= rotationX && rotationX < 31, // post
-
     2.5 <= rotationX && rotationX < 6, // canvas
     5.7 <= rotationX && rotationX < 9, // contact
     9 <= rotationX && rotationX < 13.5, // blog
