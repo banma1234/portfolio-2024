@@ -16,6 +16,7 @@ const svg = {
 };
 //#endregion
 
+// #region custom-svg
 class customSVG extends HTMLElement {
   constructor() {
     super();
@@ -37,5 +38,6 @@ class customSVG extends HTMLElement {
         </svg>`;
   }
 }
+//#endregion
 
 customElements.define("custom-svg", customSVG);
