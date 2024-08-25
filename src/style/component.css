@@ -335,6 +335,7 @@ button span {
   white-space: normal;
   text-overflow: ellipsis;
   display: -webkit-box;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   word-break: break-all;
@@ -343,6 +344,7 @@ button span {
   font-size: 1.2rem;
   font-weight: bold;
   padding-bottom: 1.5rem;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   max-height: 3rem;
 
