@@ -34,6 +34,10 @@
 .slide-container h1 {
   font-size: 2.5rem;
   font-weight: 900;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
 }
 .slide.enabled {
   display: block;
@@ -46,16 +50,32 @@
   letter-spacing: -1.5px;
   word-spacing: 1.5px;
   text-align: center;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 2rem;
+  }
 }
 .slide-small-text {
   margin-top: 20px;
   margin-left: 5px;
+
+  @media screen and (max-width: 600px) {
+    height: 80px;
+    overflow: auto;
+  }
 }
 .slide-small-text p {
   font-weight: bold;
   font-size: 18px;
   margin: 0;
   opacity: 0.5;
+
+  @media screen and (max-width: 899px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0.3rem;
+  }
 }
 #slide0 {
   margin-top: 200px;
@@ -70,6 +90,10 @@
 #slide3,
 #slide5 {
   bottom: 6vw;
+
+  @media screen and (max-width: 899px) {
+    bottom: 10vw;
+  }
 }
 #slide3 button {
   margin-top: 2rem;
@@ -83,6 +107,10 @@
   height: 50px;
   text-align: center;
   bottom: -6vw;
+
+  @media screen and (max-width: 1024px) {
+    bottom: -10vw;
+  }
 }
 #scroll-down p {
   font-size: 0.9rem;
@@ -291,6 +319,12 @@ button span {
   overflow: hidden;
   background-color: #fff;
   cursor: pointer;
+
+  @media screen and (max-width: 899px) {
+    width: 210px;
+    height: 300px;
+    margin: 1rem;
+  }
 }
 .post_article {
   padding: 1rem;
@@ -311,12 +345,22 @@ button span {
   padding-bottom: 1.5rem;
   -webkit-line-clamp: 2;
   max-height: 3rem;
+
+  @media screen and (max-width: 899px) {
+    font-size: 1rem;
+    max-height: 4rem;
+    -webkit-line-clamp: 3;
+  }
 }
 .post_article p {
   padding-top: 1rem;
   font-size: 0.9rem;
   height: 4.2rem;
   color: #9395a7;
+
+  @media screen and (max-width: 899px) {
+    display: none;
+  }
 }
 .post_article span {
   padding-top: 2rem;
@@ -342,6 +386,11 @@ button span {
   width: 270px;
   height: 170px;
   overflow: hidden;
+
+  @media screen and (max-width: 899px) {
+    width: auto;
+    max-height: 150px;
+  }
 }
 .img_overlay img {
   z-index: 1;
@@ -361,12 +410,20 @@ button span {
   background-color: rgba(0, 0, 0, 60%);
   transition: opacity 0.5s;
   opacity: 0;
+
+  @media screen and (max-width: 899px) {
+    width: 210px;
+  }
 }
 .overlap h1 {
   color: #fff;
   padding: 1rem;
   text-align: center;
   font-size: 1.5rem;
+
+  @media screen and (max-width: 899px) {
+    font-size: 1.1rem;
+  }
 }
 
 #opensource_1,
@@ -397,6 +454,11 @@ button span {
   display: none;
   padding: 2rem;
   border: 2px solid #d9cee1;
+
+  @media screen and (max-width: 899px) {
+    width: 400px;
+    height: 260px;
+  }
 }
 #contact_overlay {
   width: 100%;
@@ -417,6 +479,10 @@ button span {
   padding: 0.5rem;
   margin-left: 5rem;
 
+  @media screen and (max-width: 899px) {
+    margin-left: 2rem;
+  }
+
   .tooltip {
     display: none;
   }
@@ -424,6 +490,10 @@ button span {
   ul {
     margin-top: 1.5rem;
     font-size: 1.1rem;
+
+    @media screen and (max-width: 899px) {
+      font-size: 0.9rem;
+    }
   }
 }
 .contact__link {
