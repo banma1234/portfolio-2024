@@ -17,6 +17,9 @@ const svg = {
 //#endregion
 
 // #region custom-svg
+/**
+ * SVG 아이콘을 맛있게 뱉어주는 커스텀 컴포넌트
+ */
 class customSVG extends HTMLElement {
   constructor() {
     super();
@@ -26,16 +29,16 @@ class customSVG extends HTMLElement {
     let className = this.getAttribute("className");
 
     this.innerHTML = `
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width=${size}
-            height=${size}
-            fill="currentColor"
-            class=${className}
-            viewBox="0 0 16 16"
-        >
-            ${svg[title]}
-        </svg>`;
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width=${size}
+        height=${size}
+        fill="currentColor"
+        class=${className}
+        viewBox="0 0 16 16"
+      >
+        ${svg[title]}
+      </svg>`;
   }
 }
 //#endregion
