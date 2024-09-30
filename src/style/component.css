@@ -77,6 +77,7 @@
     padding: 0.3rem;
   }
 }
+#slide4,
 #slide0 {
   margin-top: 200px;
 }
@@ -479,6 +480,7 @@ button span {
   display: none;
 }
 #contact {
+  opacity: 0;
   display: flex;
   align-items: center;
   overflow: hidden;
