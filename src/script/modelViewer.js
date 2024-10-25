@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import atomModel from "../3Dmodel/react.glb";
 import { scrollAction } from "./global";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
@@ -31,7 +32,7 @@ const camera = new THREE.PerspectiveCamera(
   0.52,
   window.innerWidth / window.innerHeight,
   1,
-  10000
+  10000,
 );
 camera.position.set(0, 0, 150);
 
@@ -41,7 +42,7 @@ scene.add(light);
 
 // #region 모델출력 및 애니메이션 반복수행
 const loader = new GLTFLoader();
-loader.load("image/react.glb", function (gltf) {
+loader.load(atomModel, function (gltf) {
   /** 3D모델 */
   const model = gltf.scene;
   scene.add(model);
