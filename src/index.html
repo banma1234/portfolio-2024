@@ -47,8 +47,8 @@
                   하는것을 최우선으로 생각합니다.
                 </p>
                 <p>
-                  React, Next.js와 같은 프레임워크에 능하며 node.js 기반의
-                  웹서버 운용, DB 쿼리작성 등 백앤드 작업 또한 가능합니다.
+                  React, Next.js와 같은 프레임워크에 능하며 mySQL 및 mongoDB
+                  쿼리작성, 관련된 api 작성 등 백앤드 작업 또한 가능합니다.
                 </p>
                 <p>
                   CSS in JS 스타일링을 선호합니다. Clip studio, Figma를 이용한
@@ -206,20 +206,22 @@
                     </div>
                   </div>
                   <li>
-                    SEO 최적화를 위해 <strong>sitemap</strong> 및
-                    <strong>RSS</strong>를 작성하였습니다. sitemap은 동적으로
-                    접근 가능하며 RSS는 xml과 json 2가지 형태로 제공됩니다.
+                    별도의 <strong>CDN 서버</strong>를 두어 이미지 로딩 및
+                    웹서버의 부하를 줄였습니다. 비로그인 유저의 댓글 작성을 위해
+                    <strong>계층형 트리구조</strong>를 활용한 댓글-대댓글 로직을
+                    직접 구현하였습니다.
                   </li>
                   <li>
-                    별도의 <strong>CDN 서버</strong>를 두어 이미지 로딩시간 및
-                    웹서버의 부하를 줄였으며 <strong>계층형 트리구조</strong>를
-                    활용해 댓글-대댓글 로직을 직접 구현하였습니다.
+                    SEO 최적화를 위해 동적으로 접근 가능한
+                    <strong>sitemap</strong>을 제공합니다.
+                    <strong>meta-data</strong>와 <strong>RSS</strong>를 빌드시
+                    자동 작성하며 RSS의 경우 json, xml 두가지 형태로 제공됩니다.
                   </li>
                   <li>
-                    <strong>stateless 세션</strong>과
-                    <strong>middleware</strong>를 이용해 로그인을 구현하여
-                    관리자 페이지에서 포스트의 작성, 수정, 삭제가 모두
-                    가능하도록 하였습니다.
+                    <strong>jwt 토큰</strong>을 이용한 로그인 및 관리자 페이지를
+                    구현하여 패이지 내에서 <strong>CRUD</strong> 작업이
+                    가능합니다. <strong>middleware</strong>를 두어 비로그인
+                    유저의 관리자 페이지 및 관련 api에 대한 접근을 차단합니다.
                   </li>
                   <li>
                     관리자 계정정보 및 각 댓글의 비밀번호와 같은 민감한 정보는
@@ -257,24 +259,16 @@
                 <ul>
                   <div class="flex_container">
                     <h1>포트폴리오 웹페이지</h1>
-                    <div class="btn_container">
-                      <a
-                        href="https://github.com/banma1234/portfolio"
-                        target="_blank"
-                      >
-                        <button><p>README</p></button>
-                      </a>
-                    </div>
                   </div>
                   <li>
                     <strong>vanila JS, CSS</strong>만을 이용한 싱글페이지
-                    애플리케이션입니다. Three.js를 제외한 모든 애니메이션 및
+                    애플리케이션입니다. 3D 모델 출력을 제외한 모든 애니메이션 및
                     기능을 <strong>라이브러리 없이</strong> 구현하였습니다.
                   </li>
                   <li>
                     <strong>Three.js</strong>를 이용해 웹 환경에서 3D 모델을
-                    출력하고 브라우저 이벤트에 모델의 애니메이션을
-                    연계하였습니다.
+                    출력하고 브라우저 이벤트에 모델의 애니메이션을 연계하여
+                    사용자 경험을 향상시켰습니다.
                   </li>
                   <li>
                     ease-in, ease-out 등 <strong>transition</strong>을 수행할 때
@@ -296,125 +290,6 @@
           </div>
 
           <div id="post-container">
-            <div class="post">
-              <a href="https://chocoham.dev/posts/27" target="_blank">
-                <div class="img_overlay">
-                  <div class="overlap">
-                    <h1>[lv.2] 주차 요금 계산 | 프로그래머스</h1>
-                  </div>
-                  <img
-                    src="https://choco-image-server.cdn.ntruss.com/thumbnail/JS_programmers.webp"
-                  />
-                </div>
-                <div class="post_article">
-                  <h2>[lv.2] 주차 요금 계산 | 프로그래머스</h2>
-                  <p>
-                    프로그래머스 lv.2 주차 요금 계산 풀이 with javascript.
-                    javascript의 객체를 이용해 차량의 입/출차 시간을 기록, 해당
-                    객체를 순회하며 주차시간을 주어진 요금표에 맞게 정산하는
-                    것으로 문제를 해결한다.
-                  </p>
-                  <span>
-                    <custom-svg
-                      title="calendar"
-                      size="0.8rem"
-                      className="bi bi-calendar-minus"
-                    ></custom-svg>
-                    &nbsp; 2023-06-03
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div class="post">
-              <a href="https://chocoham.dev/posts/23" target="_blank">
-                <div class="img_overlay">
-                  <div class="overlap">
-                    <h1>[문제해결] frequency Counter 패턴</h1>
-                  </div>
-                  <img
-                    src="https://choco-image-server.cdn.ntruss.com/thumbnail/js_algorithm.webp"
-                  />
-                </div>
-                <div class="post_article">
-                  <h2>[문제해결] frequency Counter 패턴</h2>
-                  <p>
-                    frequency counter 패턴은 hash를 활용하는 패턴으로 빈도수를
-                    측정하고 비교하는데 사용된다. javascript에서는 객체 혹은 Map
-                    자료형을 이용해 구현할 수 있다. 단순 배열을 이용하는것 보다
-                    시간복잡도를 눈에띄게 줄일 수 있다.
-                  </p>
-                  <span>
-                    <custom-svg
-                      title="calendar"
-                      size="0.8rem"
-                      className="bi bi-calendar-minus"
-                    ></custom-svg>
-                    &nbsp; 2023-05-12
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div class="post">
-              <a href="https://chocoham.dev/posts/31" target="_blank">
-                <div class="img_overlay">
-                  <div class="overlap">
-                    <h1>Next.js 13+에서 무한 대댓글 구현 (with mongoDB)</h1>
-                  </div>
-                  <img
-                    src="https://choco-image-server.cdn.ntruss.com/images/Frame_1.png"
-                  />
-                </div>
-                <div class="post_article">
-                  <h2>Next.js 13+에서 무한 대댓글 구현 (with mongoDB)</h2>
-                  <p>
-                    next.js 13 이상의 버전에서 mongoDB와 계층형 트리구조를
-                    활용한 무한 대댓글을 구현하였습니다. 댓글가 대댓글의
-                    그룹으로 묶어 관리하는 REF, 댓글의 순서를 결정하는 RE_STEP,
-                    댓글의 들여쓰기 레벨을 의미하는 RE_LEVEL, 부모 댓글의 고유
-                    식별자를 의미하는 RE_PARENT 총 4개의 속성을 이용해 자동으로
-                    대댓글의 위치를 조정하도록 하였습니다.
-                  </p>
-                  <span>
-                    <custom-svg
-                      title="calendar"
-                      size="0.8rem"
-                      className="bi bi-calendar-minus"
-                    ></custom-svg>
-                    &nbsp; 2024-01-04
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div class="post">
-              <a href="https://chocoham.dev/posts/28" target="_blank">
-                <div class="img_overlay">
-                  <div class="overlap">
-                    <h1>[next.js] CDN 서버를 활용한 Markdown 이미지 첨부(1)</h1>
-                  </div>
-                  <img
-                    src="https://choco-image-server.cdn.ntruss.com/thumbnail/myblog_thumbnail.webp"
-                  />
-                </div>
-                <div class="post_article">
-                  <h2>[next.js] CDN 서버를 활용한 Markdown 이미지 첨부(1)</h2>
-                  <p>
-                    마크다운에서 이미지를 첨부하기 위해선 img태그의 src에 url을
-                    전달하듯 url 형식의 문자열을 전달해야 합니다. 때문에
-                    README를 작성하거나 저처럼 블로그 등지에서 마크다운을
-                    활용하는 경우 첨부하고자 하는 이미지의 전처리 과정이
-                    요구됩니다.
-                  </p>
-                  <span>
-                    <custom-svg
-                      title="calendar"
-                      size="0.8rem"
-                      className="bi bi-calendar-minus"
-                    ></custom-svg>
-                    &nbsp; 2023-11-11
-                  </span>
-                </div>
-              </a>
-            </div>
             <div class="post">
               <a href="https://chocoham.dev" target="_blank">
                 <div class="img_overlay">
@@ -444,11 +319,133 @@
                       size="0.8rem"
                       className="bi bi-calendar-minus"
                     ></custom-svg>
+                    &nbsp; 2024-10-17
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="post">
+              <a href="https://chocoham.dev/posts/27" target="_blank">
+                <div class="img_overlay">
+                  <div class="overlap">
+                    <h1>[lv.2] 주차 요금 계산 | 프로그래머스</h1>
+                  </div>
+                  <img
+                    src="https://choco-image-server.cdn.ntruss.com/thumbnail/JS_programmers.webp"
+                  />
+                </div>
+                <div class="post_article">
+                  <h2>[lv.2] 주차 요금 계산 | 프로그래머스</h2>
+                  <p>
+                    프로그래머스 lv.2 주차 요금 계산 풀이 with javascript.
+                    javascript의 객체를 이용해 차량의 입/출차 시간을 기록, 해당
+                    객체를 순회하며 주차시간을 주어진 요금표에 맞게 정산하는
+                    것으로 문제를 해결한다.
+                  </p>
+                  <span>
+                    <custom-svg
+                      title="calendar"
+                      size="0.8rem"
+                      className="bi bi-calendar-minus"
+                    ></custom-svg>
+                    &nbsp; 2023-06-04
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="post">
+              <a href="https://chocoham.dev/posts/23" target="_blank">
+                <div class="img_overlay">
+                  <div class="overlap">
+                    <h1>[문제해결] frequency Counter 패턴</h1>
+                  </div>
+                  <img
+                    src="https://choco-image-server.cdn.ntruss.com/thumbnail/js_algorithm.webp"
+                  />
+                </div>
+                <div class="post_article">
+                  <h2>[문제해결] frequency Counter 패턴</h2>
+                  <p>
+                    frequency counter 패턴은 hash를 활용하는 패턴으로 빈도수를
+                    측정하고 비교하는데 사용된다. javascript에서는 객체 혹은 Map
+                    자료형을 이용해 구현할 수 있다. 단순 배열을 이용하는것 보다
+                    시간복잡도를 눈에띄게 줄일 수 있다.
+                  </p>
+                  <span>
+                    <custom-svg
+                      title="calendar"
+                      size="0.8rem"
+                      className="bi bi-calendar-minus"
+                    ></custom-svg>
                     &nbsp; 2023-05-12
                   </span>
                 </div>
               </a>
             </div>
+
+            <div class="post">
+              <a href="https://chocoham.dev/posts/31" target="_blank">
+                <div class="img_overlay">
+                  <div class="overlap">
+                    <h1>Next.js 13+에서 무한 대댓글 구현 (with mongoDB)</h1>
+                  </div>
+                  <img
+                    src="https://choco-image-server.cdn.ntruss.com/images/Frame_1.png"
+                  />
+                </div>
+                <div class="post_article">
+                  <h2>Next.js 13+에서 무한 대댓글 구현 (with mongoDB)</h2>
+                  <p>
+                    next.js 13 이상의 버전에서 mongoDB와 계층형 트리구조를
+                    활용한 무한 대댓글을 구현하였습니다. 댓글가 대댓글의
+                    그룹으로 묶어 관리하는 REF, 댓글의 순서를 결정하는 RE_STEP,
+                    댓글의 들여쓰기 레벨을 의미하는 RE_LEVEL, 부모 댓글의 고유
+                    식별자를 의미하는 RE_PARENT 총 4개의 속성을 이용해 자동으로
+                    대댓글의 위치를 조정하도록 하였습니다.
+                  </p>
+                  <span>
+                    <custom-svg
+                      title="calendar"
+                      size="0.8rem"
+                      className="bi bi-calendar-minus"
+                    ></custom-svg>
+                    &nbsp; 2024-04-12
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="post">
+              <a href="https://chocoham.dev/posts/28" target="_blank">
+                <div class="img_overlay">
+                  <div class="overlap">
+                    <h1>[next.js] CDN 서버를 활용한 Markdown 이미지 첨부(1)</h1>
+                  </div>
+                  <img
+                    src="https://choco-image-server.cdn.ntruss.com/thumbnail/myblog_thumbnail.webp"
+                  />
+                </div>
+                <div class="post_article">
+                  <h2>[next.js] CDN 서버를 활용한 Markdown 이미지 첨부(1)</h2>
+                  <p>
+                    마크다운에서 이미지를 첨부하기 위해선 img태그의 src에 url을
+                    전달하듯 url 형식의 문자열을 전달해야 합니다. 때문에
+                    README를 작성하거나 저처럼 블로그 등지에서 마크다운을
+                    활용하는 경우 첨부하고자 하는 이미지의 전처리 과정이
+                    요구됩니다.
+                  </p>
+                  <span>
+                    <custom-svg
+                      title="calendar"
+                      size="0.8rem"
+                      className="bi bi-calendar-minus"
+                    ></custom-svg>
+                    &nbsp; 2023-11-12
+                  </span>
+                </div>
+              </a>
+            </div>
+
             <div class="post">
               <a href="https://chocoham.dev/posts/2" target="_blank">
                 <div class="img_overlay">
@@ -639,7 +636,7 @@
 
           <div class="slide" id="slide4">
             <div class="slide-big-text">
-              <p>프론트앤드 디발자, 박범수 였습니다.</p>
+              <p>사용자 경험을 위해 최선을 다하는 "디발자"가 되겠습니다.</p>
             </div>
             <div class="slide-small-text">
               <p>끝까지 봐주셔서 감사합니다.</p>
