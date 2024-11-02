@@ -167,15 +167,17 @@
                   <div class="icon-cards__content">
                     <div class="icon-cards__item">
                       <img
-                        src="https://choco-image-server.cdn.ntruss.com/build/blog_1.webp"
+                        src="https://choco-image-server.cdn.ntruss.com/build/blog_main.webp"
                       />
                     </div>
                     <div class="icon-cards__item">
-                      <img src="image/blog_2.webp" />
+                      <img
+                        src="https://choco-image-server.cdn.ntruss.com/build/reply.webp"
+                      />
                     </div>
                     <div class="icon-cards__item">
                       <img
-                        src="https://choco-image-server.cdn.ntruss.com/build/blog_3.webp"
+                        src="https://github.com/banma1234/myBlog-migration/assets/77619465/7d352087-e972-4662-933c-3e900362aa95"
                       />
                     </div>
                   </div>
@@ -206,27 +208,34 @@
                     </div>
                   </div>
                   <li>
-                    별도의 <strong>CDN 서버</strong>를 두어 이미지 로딩 및
-                    웹서버의 부하를 줄였습니다. 비로그인 유저의 댓글 작성을 위해
-                    <strong>계층형 트리구조</strong>를 활용한 댓글-대댓글 로직을
-                    직접 구현하였습니다.
+                    <strong>SEO</strong>의 개념과 필요 요소들을 배웠습니다.
+                    <strong>sitemap</strong>은 <strong>SSR</strong>을 활용하여
+                    동적 파일로, <strong>meta-data</strong>,
+                    <strong>RSS</strong>는 정적 파일로 제출하였습니다.
+                    <strong>Google PageSpeed Insights</strong> 기준 검색엔진
+                    최적화 <strong>100점</strong>을 받았습니다.
                   </li>
                   <li>
-                    SEO 최적화를 위해 동적으로 접근 가능한
-                    <strong>sitemap</strong>을 제공합니다.
-                    <strong>meta-data</strong>와 <strong>RSS</strong>를 빌드시
-                    자동 작성하며 RSS의 경우 json, xml 두가지 형태로 제공됩니다.
+                    <strong>분산 서비스</strong>에 관해 배웠습니다. 외부 호스팅
+                    서버 <strong>CDN</strong>을 구성, 기존에 비해
+                    <strong>이미지 로딩</strong> 시간을
+                    <strong>1초 이상</strong> 줄였습니다.
+                    <strong>AWS S3 bucket</strong>을 <strong>JS SDK</strong>를
+                    이용해 블로그, CDN과 연동하여 블로그 내 썸네일, 포스트
+                    이미지 전송을 구현했습니다.
                   </li>
                   <li>
-                    <strong>jwt 토큰</strong>을 이용한 로그인 및 관리자 페이지를
-                    구현하여 패이지 내에서 <strong>CRUD</strong> 작업이
-                    가능합니다. <strong>middleware</strong>를 두어 비로그인
-                    유저의 관리자 페이지 및 관련 api에 대한 접근을 차단합니다.
+                    사용 모듈의 버전업에 근거한 <strong>리팩토링</strong> 및
+                    <strong>migration</strong>을 경험하였습니다. 신규 문법과
+                    개선된 메소드 사용은 곧 <strong>성능 개선</strong>으로
+                    이어졌습니다.
                   </li>
                   <li>
-                    관리자 계정정보 및 각 댓글의 비밀번호와 같은 민감한 정보는
-                    <strong>암호화</strong>되어 DB에 저장됩니다. 암호화
-                    알고리즘으로는 <strong>bcrypt</strong>를 채택하였습니다.
+                    <strong>계층형 트리구조</strong>를 활용한
+                    <strong>대댓글 시스템</strong>을 직접 구현하며
+                    <strong>비관계형 DB</strong> 스키마의 설계 및
+                    <strong>쿼리문</strong>, <strong>api</strong> 작성에 관해
+                    배웠습니다.
                   </li>
                 </ul>
                 <div class="tag">
@@ -263,17 +272,20 @@
                   <li>
                     <strong>vanila JS, CSS</strong>만을 이용한 싱글페이지
                     애플리케이션입니다. 3D 모델 출력을 제외한 모든 애니메이션 및
-                    기능을 <strong>라이브러리 없이</strong> 구현하였습니다.
+                    기능을 <strong>라이브러리 없이</strong> 구현하였습니다. 이
+                    프로젝트를 통해 <strong>javascript</strong> 역량을 한층
+                    향상시켰습니다.
                   </li>
                   <li>
-                    <strong>Three.js</strong>를 이용해 웹 환경에서 3D 모델을
-                    출력하고 브라우저 이벤트에 모델의 애니메이션을 연계하여
-                    사용자 경험을 향상시켰습니다.
+                    <strong>Three.js</strong>를 활용해 웹 환경에서 3D 모델을
+                    다루는 법을 배웠습니다. 이를 활용해
+                    <strong>브라우저 이벤트</strong>에 3D 모델의 애니메이션을
+                    연동, <strong>사용자 경험</strong>을 향상시켰습니다.
                   </li>
                   <li>
                     ease-in, ease-out 등 <strong>transition</strong>을 수행할 때
-                    <strong>bezier-curve</strong>를 적용하여 사용자에게 보다
-                    자연스럽게 보이도록 하였습니다.
+                    <strong>bezier-curve</strong>를 적용하여 애니메이션이
+                    사용자에게 보다 자연스럽게 연출되도록 구현했습니다.
                   </li>
                   <li>
                     <strong>intersection observer</strong> 기능을 활용한
@@ -282,8 +294,8 @@
                   </li>
                 </ul>
                 <div class="tag">
-                  <span># HTML</span><span># javascript</span><span># CSS</span
-                  ><span># Three.js</span>
+                  <span># javascript</span><span># CSS</span
+                  ><span># Three.js</span><span># vite</span>
                 </div>
               </div>
             </div>
