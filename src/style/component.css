@@ -458,6 +458,20 @@ button span {
   }
 }
 
+.tag {
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  display: flex;
+}
+.tag span {
+  padding-bottom: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #84909c;
+  border-bottom: 1.5px solid #84909c;
+}
+
 .tooltip {
   display: none;
 }
