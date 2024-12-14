@@ -200,6 +200,8 @@
   padding: 20px;
   min-width: 400px;
   max-width: 620px;
+  border-radius: 2rem;
+  background: linear-gradient(0deg, rgb(242, 242, 242), rgba(19, 16, 68, 0));
 }
 #card_1 img {
   width: auto;
