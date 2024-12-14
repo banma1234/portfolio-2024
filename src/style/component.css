@@ -77,9 +77,11 @@
     padding: 0.3rem;
   }
 }
-#slide4,
-#slide0 {
+#slide4 {
   margin-top: 200px;
+}
+#slide0 {
+  margin-top: 400px;
 }
 #slide1 .slide-big-text {
   @media screen and (max-width: 899px) {
@@ -96,7 +98,6 @@
     bottom: 10vw;
   }
 }
-
 #scroll-down {
   position: absolute;
   padding: 30px 0;
@@ -104,6 +105,8 @@
   height: 50px;
   text-align: center;
   bottom: -6vw;
+  opacity: 0;
+  transition: all 1s ease;
 
   @media screen and (max-width: 1024px) {
     bottom: -10vw;
@@ -112,6 +115,11 @@
 #scroll-down p {
   font-size: 0.9rem;
   margin-top: 64px;
+}
+
+#slide0-text {
+  opacity: 0;
+  transition: all 1s ease;
 }
 
 .badge_container {
@@ -200,8 +208,6 @@
   padding: 20px;
   min-width: 400px;
   max-width: 620px;
-  border-radius: 2rem;
-  background: linear-gradient(0deg, rgb(242, 242, 242), rgba(19, 16, 68, 0));
 }
 #card_1 img {
   width: auto;
@@ -447,14 +453,14 @@ button span {
 
   p {
     padding: 0.5rem 0.8rem;
-    background-color: #5d6e81;
+    background-color: #a6c1e9;
     border-radius: 1rem;
     color: #fff;
   }
 
   span {
     padding: 0.5rem 0.8rem;
-    background-color: #9c98bd;
+    background-color: #95a4f8;
     border-radius: 1rem;
     color: #fff;
   }

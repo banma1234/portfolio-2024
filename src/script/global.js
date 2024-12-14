@@ -1,18 +1,18 @@
-// #region 그 디자인 페이지에 이미지 보이는거
-const image = document.getElementById("activity_image");
-const imagChange = document.querySelectorAll(".img_change");
-const imageMap = ["image/profile.png", "image/profile_2.jpg"];
+const slide0 = document.getElementById("slide0-text");
+const scrollDown = document.getElementById("scroll-down");
+slide0.style.opacity = "0";
 
-imagChange.forEach((item, i) => {
-  item.addEventListener("mouseover", (e) => {
-    image.classList.add("fade_out");
-    setTimeout(() => {
-      image.src = imageMap[i];
-      image.classList.remove("fade_out");
-    }, 300);
-  });
-});
-//#endregion
+setTimeout(() => {
+  slide0.style.opacity = "1";
+  slide0.style.transform = "translateY(-2rem)";
+}, 500)
+setTimeout(() => {
+  scrollDown.style.opacity = "1";
+  scrollDown.style.transform = "translateY(-2rem)";
+}, 700)
+setTimeout(() => {
+  slide0.style.transition = "none";
+}, 1300)
 
 // #region 모달창 제어
 const body = document.getElementsByTagName("body")[0];
